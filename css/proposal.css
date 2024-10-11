@@ -5,14 +5,33 @@ body{
 
 section {
     padding: 1rem;
-    background-color: husky purple;
+    background-color: rgb(74, 26, 81);
+    border-radius: 1rem;
+    margin: 1rem
 }
 
 p {
-	color: light-grey;
+	color: rgb(248, 241, 241);
 }
 
 header {
 	text-align: center;
 	margin-bottom: 3rem;
+}
+
+a {
+    color: white;
+}
+
+h2 {
+	color: rgb(248, 241, 241);
+}
+
+li {
+    color: rgb(248, 241, 241);
+}
+
+.questions {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
