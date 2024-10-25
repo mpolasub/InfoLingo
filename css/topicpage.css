@@ -78,7 +78,7 @@ nav {
     color: black;
     font-size: 30px;
     background-color: lavender;
-    border-radius: 15px;
+    border-radius: 50px;
     margin-bottom: 30px;
 }
 
@@ -86,6 +86,5 @@ nav {
     border-radius: 15px;
     background-color: #A58DDE;
     margin-bottom: 20px;
-
 }
 
