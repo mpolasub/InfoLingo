@@ -1,0 +1,282 @@
+[
+    {
+        "word": "algorithm",
+        "definition": "A process or set of rules to be followed in calculations or problem-solving operations.",
+        "example": "The algorithm analyzes patterns in the data to make predictions.",
+        "category": [
+            "Data Science"
+        ]
+    },
+    {
+        "word": "big data",
+        "definition": "Large and complex data sets that are difficult to process with traditional data-processing software.",
+        "example": "Big data analytics helps organizations make data-driven decisions in real-time.",
+        "category": [
+            "Data Science"
+        ]
+    },
+    {
+        "word": "machine learning",
+        "definition": "A type of artificial intelligence that allows computers to learn from data without being explicitly programmed.",
+        "example": "Machine learning algorithms can automatically improve their performance as they are exposed to more data.",
+        "category": [
+            "Data Science"
+        ]
+    },
+    {
+        "word": "data cleaning",
+        "definition": "The process of identifying and correcting errors or inconsistencies in data to improve its quality.",
+        "example": "Data cleaning is crucial to ensure that the insights drawn from data are accurate.",
+        "category": [
+            "Data Science"
+        ]
+    },
+    {
+        "word": "predictive modeling",
+        "definition": "A statistical technique used to predict future outcomes based on historical data.",
+        "example": "Predictive modeling is used to forecast sales based on past purchasing behavior.",
+        "category": [
+            "Data Science"
+        ]
+    },
+    {
+        "word": "data visualization",
+        "definition": "The graphical representation of data to help understand patterns, trends, and insights.",
+        "example": "Data visualization tools like Tableau allow analysts to present complex data in a more digestible format.",
+        "category": [
+            "Data Science"
+        ]
+    },
+    {
+        "word": "wellness",
+        "definition": "The state of being in good health, especially as an actively pursued goal.",
+        "example": "Regular exercise and a balanced diet are key components of wellness.",
+        "category": [
+            "Health & Well-Being"
+        ]
+    },
+    {
+        "word": "mental health",
+        "definition": "A person's emotional, psychological, and social well-being, affecting how they think, feel, and act.",
+        "example": "Taking care of mental health is just as important as taking care of physical health.",
+        "category": [
+            "Health & Well-Being"
+        ]
+    },
+    {
+        "word": "nutrition",
+        "definition": "The process of providing or obtaining the food necessary for health and growth.",
+        "example": "A balanced diet with proper nutrition is essential for maintaining energy levels throughout the day.",
+        "category": [
+            "Health & Well-Being"
+        ]
+    },
+    {
+        "word": "exercise",
+        "definition": "Physical activity that is planned and structured to improve fitness and health.",
+        "example": "Regular exercise can help reduce stress and increase overall physical fitness.",
+        "category": [
+            "Health & Well-Being"
+        ]
+    },
+    {
+        "word": "sleep hygiene",
+        "definition": "Healthy habits and practices that promote quality sleep.",
+        "example": "Maintaining good sleep hygiene, such as keeping a regular sleep schedule, can improve sleep quality.",
+        "category": [
+            "Health & Well-Being"
+        ]
+    },
+    {
+        "word": "stress management",
+        "definition": "Techniques and strategies used to cope with and reduce stress.",
+        "example": "Practices like meditation and mindfulness are effective tools for stress management.",
+        "category": [
+            "Health & Well-Being"
+        ]
+    },
+    {
+        "word": "usability",
+        "definition": "The ease of use and learnability of a human-computer interface.",
+        "example": "The usability of the app was improved after the interface was redesigned based on user feedback.",
+        "category": [
+            "Human-Computer Interaction"
+        ]
+    },
+    {
+        "word": "user interface",
+        "definition": "The means by which a user interacts with a computer or software system.",
+        "example": "A clean and intuitive user interface can enhance the overall user experience.",
+        "category": [
+            "Human-Computer Interaction"
+        ]
+    },
+    {
+        "word": "interaction design",
+        "definition": "The design of the interaction between users and products, including the design of the interface and user experience.",
+        "example": "Good interaction design ensures that users can accomplish their tasks efficiently and with ease.",
+        "category": [
+            "Human-Computer Interaction"
+        ]
+    },
+    {
+        "word": "accessibility",
+        "definition": "The design of products, devices, or environments for people with disabilities.",
+        "example": "Accessibility features, such as screen readers and text-to-speech, make digital content more inclusive.",
+        "category": [
+            "Human-Computer Interaction"
+        ]
+    },
+    {
+        "word": "affordance",
+        "definition": "The property of an object that suggests its function to the user.",
+        "example": "The button's raised edges provide an affordance, indicating that it can be clicked.",
+        "category": [
+            "Human-Computer Interaction"
+        ]
+    },
+    {
+        "word": "persona",
+        "definition": "A fictional character created to represent a user type, used in user-centered design.",
+        "example": "The design team created several personas to guide the development of the new app interface.",
+        "category": [
+            "Human-Computer Interaction"
+        ]
+    },
+    {
+        "word": "taxonomy",
+        "definition": "The classification of information into a system or hierarchy, often used in websites or digital content.",
+        "example": "The website's taxonomy allowed users to easily navigate through different categories of content.",
+        "category": [
+            "Information Architecture"
+        ]
+    },
+    {
+        "word": "metadata",
+        "definition": "Data that provides information about other data, such as the author, date of creation, or format.",
+        "example": "Metadata helps in organizing digital resources and improving searchability.",
+        "category": [
+            "Information Architecture"
+        ]
+    },
+    {
+        "word": "wireframe",
+        "definition": "A visual representation of a web page or app interface used in the early stages of design.",
+        "example": "The wireframe of the website was shared with stakeholders for feedback before any coding began.",
+        "category": [
+            "Information Architecture"
+        ]
+    },
+    {
+        "word": "card sorting",
+        "definition": "A technique used in information architecture to organize content based on user understanding.",
+        "example": "Card sorting helped the team determine how to best categorize the website’s features.",
+        "category": [
+            "Information Architecture"
+        ]
+    },
+    {
+        "word": "site map",
+        "definition": "A visual representation of the structure of a website, showing the relationships between pages.",
+        "example": "The site map helped the developers understand how the various pages of the website should be linked together.",
+        "category": [
+            "Information Architecture"
+        ]
+    },
+    {
+        "word": "navigation",
+        "definition": "The system of menus, buttons, and links used to guide users through a website or application.",
+        "example": "Effective navigation allows users to quickly find the information they're looking for on a website.",
+        "category": [
+            "Information Architecture"
+        ]
+    },
+    {
+        "word": "firewall",
+        "definition": "A network security system that monitors and controls incoming and outgoing network traffic.",
+        "example": "The firewall blocked unauthorized access to the company's internal network.",
+        "category": [
+            "Information Assurance and Cybersecurity"
+        ]
+    },
+    {
+        "word": "encryption",
+        "definition": "The process of converting information or data into a code to prevent unauthorized access.",
+        "example": "Sensitive data was encrypted before transmission to ensure its security.",
+        "category": [
+            "Information Assurance and Cybersecurity"
+        ]
+    },
+    {
+        "word": "phishing",
+        "definition": "A type of cyber attack in which fraudulent communications are made to trick individuals into revealing personal information.",
+        "example": "The employee almost fell victim to a phishing scam that appeared to come from the IT department.",
+        "category": [
+            "Information Assurance and Cybersecurity"
+        ]
+    },
+    {
+        "word": "malware",
+        "definition": "Software designed to disrupt, damage, or gain unauthorized access to a computer system.",
+        "example": "The company’s antivirus software detected and removed the malware before it could cause any damage.",
+        "category": [
+            "Information Assurance and Cybersecurity"
+        ]
+    },
+    {
+        "word": "two-factor authentication",
+        "definition": "A security process in which the user provides two forms of identification before gaining access to an account.",
+        "example": "Two-factor authentication adds an extra layer of security to online accounts.",
+        "category": [
+            "Information Assurance and Cybersecurity"
+        ]
+    },
+    {
+        "word": "ransomware",
+        "definition": "A type of malware that locks or encrypts a victim's data and demands payment to restore access.",
+        "example": "The organization had to pay the ransom after falling victim to a ransomware attack.",
+        "category": [
+            "Information Assurance and Cybersecurity"
+        ]
+    },
+    {
+        "word": "data governance",
+        "definition": "The process of managing the availability, usability, integrity, and security of data used in an organization.",
+        "example": "Data governance policies ensure that sensitive information is protected and properly managed.",
+        "category": [
+            "Information Management"
+        ]
+    },
+    {
+        "word": "document management",
+        "definition": "The process of storing, managing, and tracking electronic documents and images.",
+        "example": "Document management systems help organizations organize and retrieve documents efficiently.",
+        "category": [
+            "Information Management"
+        ]
+    },
+    {
+        "word": "metadata management",
+        "definition": "The process of organizing and maintaining metadata to ensure consistency and accuracy across systems.",
+        "example": "Effective metadata management improves the quality and searchability of data across databases.",
+        "category": [
+            "Information Management"
+        ]
+    },
+    {
+        "word": "data warehouse",
+        "definition": "A system used for reporting and data analysis, typically storing large volumes of historical data.",
+        "example": "The company uses a data warehouse to store and analyze years of sales data.",
+        "category": [
+            "Information Management"
+        ]
+    },
+    {
+        "word": "content management",
+        "definition": "The process of managing digital content through its lifecycle, including creation, storage, and publishing.",
+        "example": "Content management systems help teams collaborate on creating and distributing content.",
+        "category": [
+            "Information Management"
+        ]
+    }
+]

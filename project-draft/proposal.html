@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Alani, Samiira, Matt, Min">
+    <meta name="Description" content="Dictionary web application where users can look up informatics-related definitions and test their knowledge using a word game">
+    <title>InfoLingo</title>
+    <link rel="stylesheet" href="css/proposal.css">
+</head>
+
+<body>
+    <header>
+        <h1>InfoLingo<h1>
+    </header>
+
+    <section>
+        <h2> Problem/Data Domain </h2>
+        <p>
+            <span class="questions">What is informatics?</span><br>
+            <a href="https://ischool.uw.edu/programs/informatics">“Informatics is the study, design, and development of
+                information technology for the good of people, organizations, and society”</a> It applies to a wide
+            range of fields, including healthcare, education, technology, and business. As an evolving field,
+            informatics plays a crucial role in today’s digital world. It’s important not only for informatics
+            professionals to understand its significance, but also for people outside the field to recognize its impact.
+        </p>
+
+        <p>
+            <span class="questions">What are the challenges that arise in teaching and learning informatics through current
+                platforms?</span><br> The
+            problem with many existing platforms is the static nature of the content and learning. There is a lack of
+            user interaction that takes away from the learning process and only promotes absorption of information.
+            Active learning is often left out with no meaningful form of feedback to further a deeper understanding. As
+            a result, this limits users to apply what they learn to real world situations and concepts in Informatics.
+        </p>
+
+        <p>
+            <span class="questions">What are previous attempts at solving this problem?</span><br>
+            Previous attempts to solve this problem include platforms like
+            <a href="https://www.coresa.com/" target="_blank">Coursera</a> and
+            <a href="https://www.udemy.com/?deal_code=&utm_term=Homepage&utm_content=Textlink&utm_campaign=Rakuten-default&ranMID=39197&ranEAID=OOTtr9mlaCk&ranSiteID=OOTtr9mlaCk-xhY8cHhr2nr8HhyNOC0GIg&LSNPUBID=OOTtr9mlaCk&utm_source=aff-campaign&utm_medium=udemyads&gclid=CjwKCAjw9p24BhB_EiwA8ID5BpTV2qMdjmGEFmlbQsb_xCBxbcmgBGw3S-ccKHmRPu1gQOK-9YHu3BoCiPUQAvD_BwE"
+                target="_blank">Udemy</a>, which offer extensive courses across topics, including informatics.
+            These platforms provide valuable long-form learning but are less effective for users seeking quick access to
+            specific terms. They also lack interactive features like leaderboards or real-time engagement, which are key
+            to increasing motivation and learning retention. According to <a
+                href="https://www.youscience.com/resources/blog/student-engagement/#:~:text=Why%20is%20engagement%20important%20in,extend%20to%20real%2Dlife%20situations."
+                target="_blank">YouScience</a>,
+            platforms that foster engagement, collaboration, and competition improve learning outcomes. Our web app
+            addresses this gap
+            by focusing on specialized term lookups, incorporating leaderboards, and encouraging user contributions.
+
+        </p>
+
+        <p>
+            <span class="questions">What is something that makes your life worse, and that you think that a web app might be able to
+                help with?
+            </span><br> One smaller personal problem that a web app could help solve is the challenge of keeping up
+            with specialized
+            terminology in rapidly evolving fields like informatics. As a student or professional, constantly looking up
+            and memorizing terms in fields like AI, data science, and cybersecurity can be overwhelming and
+            time-consuming. A web app that organizes and provides quick access to specialized terms, while also offering
+            interactive features like leaderboards to gamify the learning experience, would make this process more
+            efficient and engaging, improving both understanding and retention.
+        </p>
+    </section>
+
+    <section>
+        <h2> App Description </h2>
+        <p><span class="questions">Who are the <em>users</em> of the application?
+        </span><br>The users of the application are primarily student, professional, and lifelong learners who want to expand
+            their vocabulary in certain areas such as data science, cybersecurity, health, and software developments.
+            Students in tech-related fields can use this app to enhance their understanding of industry-specific terms,
+            and professionals can use it to develop their skills and get information on new vocabulary in those fields.
+            The app can also have a significant impact on minority groups by giving them equitable access. The
+            interactive
+            and gamified nature of the app will help bridge the skills gap for individuals with marginalized backgrounds
+            who may face barriers, especially in traditional educational settings. The app's user-generated content,
+            which submits examples of how people use words in real life, creates a shared knowledge community and helps
+            integrate different perspectives into the learning process.
+        </p>
+
+        <p> <span class="questions">What will the <em>users</em> do with the app?
+        </span><br>Users will engage with the web app by exploring, learning, and testing themselves on domain-specific
+            vocabulary
+            through three interactive features. First, the app is organized by specific topics, allowing users to focus
+            on
+            vocabulary related to areas such as data science, health, or software development. This organization makes
+            the app more user-friendly and ensures that users are not overwhelmed by unrelated information. Second, the
+            app
+            offers a gamified learning experience, where users can participate in vocabulary quizzes, daily challenges,
+            and earn points for correct answers. These points contribute to a leaderboard, adding a competitive and
+            motivating
+            element to the learning process. Finally, users can listen to the speech audio of words using the Speak.js
+            library
+            to practice pronunciation. This feature enhances the learning experience by allowing users to hear the words
+            spoken
+            aloud and practice their pronunciation, further improving retention and mastery of new vocabulary.
+        </p>
+
+        <p><span class="questions">What kind of information will the users be viewing?
+        </span><br>Initially, we intended to find a dictionary API with terms specifically for Informatics or STEM related
+            fields, but because
+            we were unable to do so, we decided to generate our own data. We had considered creating our own API, but
+            because of
+            the costs of hosting one, we decided to store our words and definitions in a CSV file. The file will be
+            populated using
+            Informatics-related terms and definitions generated from ChatGPT. Some of the specific topics we intend to
+            include are
+            <span>
+                <ul>
+                    <li>Data Science</li>
+                    <li>Health & Well-Being</li>
+                    <li>Human-Computer Interaction</li>
+                    <li>Information Architecture</li>
+                    <li>Information Assurance and Cybersecurity</li>
+                    <li>Information Management</li>
+                    <li>Information & Society</li>
+                    <li>Software Development</li>
+                </ul>
+                <span>
+        </p>
+
+
+        <p> <span class="questions">How will this app help solve your chosen problem?
+        </span><br>We are trying to tackle the lack of informatics-related study resources. This app will help those wanting to
+            expand their
+            Informatics-related vocabulary discover and understand new words, track their progress, and practice their
+            knowledge.
+            By gamifying the experience, we can make learners feel more motivated to study and engage with the words
+            they are
+            trying to understand, which can lead to a better retention of information. All in all, the goal is for users
+            to feel
+            more confident in their knowledge when using language correctly in the real world. Such as, applying for
+            jobs, interviewing,
+            or participating in future conversations.</p>
+
+</body>
+
+</html>
