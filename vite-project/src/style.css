@@ -163,10 +163,11 @@ button:hover {
 /* Footer Style */
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: auto;
   color: #888;
   padding: 15px 0;
   font-size: 0.9rem;
+  position: relative;
 }
 
 #quiz-main {
@@ -290,3 +291,54 @@ footer {
     width: 100%;
   }
 }
+
+/* Games Page Styles */
+.games-section {
+  padding: 20px;
+}
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.game-card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.game-card:hover {
+  background-color: #444;
+}
+
+.game-card h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.game-card p {
+  color: white;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.game-card a {
+  margin-top: auto;
+}
+
+/* Page Content Styles */
+.page-content {
+  padding: 20px;
+  color: #fff;
+}
+
