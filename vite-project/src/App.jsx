@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import Leaderboard from "./components/Leaderboard";
-import VocabQuiz from "./components/VocabQuiz";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Leaderboard from "./pages/Leaderboard";
+import VocabQuiz from "./pages/VocabQuiz";
 
 function App() {
   return (

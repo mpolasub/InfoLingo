@@ -1,5 +1,5 @@
 import React from "react";
-import UniversalButton from "./UniversalButton";
+import UniversalButton from "../components/UniversalButton";
 import "../style.css";
 
 function Leaderboard() {
