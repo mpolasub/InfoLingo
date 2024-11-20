@@ -355,6 +355,35 @@ ul {
 
 } */
 
+/*            upload  page           */
+
+.box-label {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.text-box input[type=text] {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 90%;
+  font-size: 1.75rem;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  border: 2px solid #DEDEDE;
+  border-radius: 1rem;
+}
+
+#submit {
+  margin-top: 2rem;
+  margin-left: 80%;
+}
+
+#submit:hover {
+  transition: 0.3s;
+  background-color: #A58DDE;
+  /* color: black; */
+  border: 0.1rem solid #631DB1;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
