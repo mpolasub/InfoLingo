@@ -1,10 +1,21 @@
 import React from "react";
-import "../style.css"; 
+import "../style.css";
 
-function UniversalButton({ label, variant = "light", onClick, disabled }) {
+function UniversalButton({ 
+  label, 
+  variant = "light", 
+  onClick, 
+  disabled, 
+  customClass = "", 
+  isFlexible = false 
+}) {
+  const buttonClass = isFlexible
+    ? `flexible-button ${variant}`
+    : `universal-button ${variant}`;
+
   return (
     <button
-      className={`universal-button ${variant}`}
+      className={`${buttonClass} ${customClass}`}
       onClick={onClick}
       disabled={disabled}
     >
