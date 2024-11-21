@@ -1,10 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import Leaderboard from "./components/Leaderboard";
-import VocabQuiz from "./components/VocabQuiz";
+import Footer from "./components/footer"
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Leaderboard from "./pages/Leaderboard";
+import VocabQuiz from "./pages/VocabQuiz";
+import Games from "./pages/Games";
+
+import Word from "./pages/Word";
+import UploadWords from "./pages/UploadWords";
 
 function App() {
   return (
@@ -15,7 +20,11 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/quiz" element={<VocabQuiz />} />
+        <Route path="/games" element={<Games />} />
+        <Route path="/word" element={<Word />} />
+        <Route path="/uploadwords" element={<UploadWords />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

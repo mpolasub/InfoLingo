@@ -14,6 +14,7 @@ function Navbar() {
           <Link to="/login">Login</Link>
           <Link to="/leaderboard">Leaderboard</Link>
           <Link to="/quiz">Quiz</Link>
+          <Link to= "/games">Games</Link>
         </div>
       </div>
     </header>
