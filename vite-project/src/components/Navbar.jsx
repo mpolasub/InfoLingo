@@ -10,7 +10,7 @@ function Navbar() {
           <img src="/img/InfoLingoLogo.png" alt="InfoLingo Logo" />
         </div>
         <div className="nav-links">
-          <Link to="/">Home</Link>
+          <Link to="/Homepage">Home</Link>
           <Link to="/login">Login</Link>
           <Link to="/leaderboard">Leaderboard</Link>
           <Link to="/quiz">Quiz</Link>

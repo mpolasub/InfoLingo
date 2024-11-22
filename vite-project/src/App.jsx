@@ -7,7 +7,7 @@ import Signup from "./pages/Signup";
 import Leaderboard from "./pages/Leaderboard";
 import VocabQuiz from "./pages/VocabQuiz";
 import Games from "./pages/Games";
-import Homepage from "./components/Homepage";
+import Homepage from "./pages/Homepage";
 import Word from "./pages/Word";
 import UploadWords from "./pages/UploadWords";
 import DataScience from "./components/DataScience";
@@ -32,7 +32,7 @@ function App() {
         <Route path="/games" element={<Games />} />
         <Route path="/word" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
-        <Route path="/index" element={<Homepage />} />
+        <Route path="/Homepage" element={<Homepage />} />
 
         {/* topics */}
         <Route path="/DataScience" element={<DataScience />} />

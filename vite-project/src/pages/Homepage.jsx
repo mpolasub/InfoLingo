@@ -1,8 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
-import UniversalButton from "./UniversalButton";
-import "../style.css"; 
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import UniversalButton from "../components/UniversalButton";
+import "../style.css"; 
+
 
 function Homepage() {
   return (
@@ -13,7 +14,7 @@ function Homepage() {
           <div className="card mb-4">
             <div className="card-body">
             <div className="col-sm-auto col-xl-12 col-sm">
-                <img src="/project-draft/assets/data-science.png" alt="Data Science Icon" className="pb-3" />
+                <img src="project-draft/assets/data-science.png" alt="Data Science Icon" className="pb-3" />
               </div>
               <h2 className="card-title">Data Science</h2>
               <p className="card-text">Explore essential terms to unlock insights from data and drive innovation.</p>
