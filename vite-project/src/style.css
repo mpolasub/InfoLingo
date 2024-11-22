@@ -412,17 +412,18 @@ ul {
   border-radius: 1rem;
 }
 
-#submit {
+.upload-submit {
   margin-top: 2rem;
+  margin-right: auto;
   margin-left: 80%;
+  /* float:right; */
+  padding:auto;
+  width: 6rem;
 }
 
-#submit:hover {
-  transition: 0.3s;
-  background-color: #A58DDE;
-  /* color: black; */
-  border: 0.1rem solid #631DB1;
-}
+
+
+
 
 
 /* Responsive Design */

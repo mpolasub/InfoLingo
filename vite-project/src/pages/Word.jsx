@@ -28,6 +28,7 @@ function Word() {
                     <span id="volume-button"><i class="fa-solid fa-volume-high"></i></span>
                     <div id="part-of-speech">noun</div> {/*need to implement*/}
                 </div>
+                <UniversalButton>Save</UniversalButton>
                 <button id="save-word">Save</button> {/*need to implement (change to universal button) */}
             </div>
             <div class="list-container">
