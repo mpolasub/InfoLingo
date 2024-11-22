@@ -1,5 +1,6 @@
 import React from "react";
 import TopicPage from "./TopicPage";
+import WordsList from "./WordsList";
 
 function InfoAssurance() {
   const title = "Information Assurance & Cybersecurity";
@@ -28,7 +29,12 @@ function InfoAssurance() {
     },
   ];
 
-  return <TopicPage title={title} description={description} cards={cards} />;
+  return (
+    <div>
+      <TopicPage title={title} description={description} cards={cards} />
+      <WordsList category="Information Assurance and Cybersecurity" />
+    </div>
+  );
 }
 
 export default InfoAssurance;

@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import UniversalButton from "../components/UniversalButton";
 import "../style.css";
 
@@ -9,9 +10,16 @@ const EXAMPLE_WORD = {
     "category": ["Programming"]
   }
 
-function Word(props) {
-    const wordObj = EXAMPLE_WORD;
-
+function Word() {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const { wordObj } = location.state || {};
+  
+    if (!wordObj) {
+        navigate("/", { replace: true });
+        return null;
+      }
+    
     return (
         <div class="main-container">
             <div class="flex-top">

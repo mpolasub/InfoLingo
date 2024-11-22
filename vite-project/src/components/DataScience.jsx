@@ -1,5 +1,6 @@
 import React from "react";
 import TopicPage from "./TopicPage";
+import WordsList from "./WordsList";
 
 function DataScience() {
   const title = "Data Science";
@@ -28,7 +29,12 @@ function DataScience() {
     },
   ];
 
-  return <TopicPage title={title} description={description} cards={cards} />;
+  return (
+    <div>
+      <TopicPage title={title} description={description} cards={cards} />
+      <WordsList category="Data Science" />
+    </div>
+  );
 }
 
 export default DataScience;

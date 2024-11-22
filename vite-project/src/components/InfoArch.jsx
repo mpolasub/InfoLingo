@@ -1,5 +1,6 @@
 import React from "react";
 import TopicPage from "./TopicPage";
+import WordsList from "./WordsList";
 
 function InfoArch() {
   const title = "Information Architecture";
@@ -28,7 +29,12 @@ function InfoArch() {
     },
   ];
 
-  return <TopicPage title={title} description={description} cards={cards} />;
+  return (
+    <div>
+      <TopicPage title={title} description={description} cards={cards} />
+      <WordsList category="Information Architecture" />
+    </div>
+  );
 }
 
 export default InfoArch;

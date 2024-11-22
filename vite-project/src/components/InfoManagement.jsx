@@ -1,5 +1,6 @@
 import React from "react";
 import TopicPage from "./TopicPage";
+import WordsList from "./WordsList";
 
 function InfoManagement() {
   const title = "Information Management";
@@ -28,7 +29,12 @@ function InfoManagement() {
     },
   ];
 
-  return <TopicPage title={title} description={description} cards={cards} />;
+  return (
+    <div>
+      <TopicPage title={title} description={description} cards={cards} />
+      <WordsList category="Information Management" />
+    </div>
+  );
 }
 
 export default InfoManagement;

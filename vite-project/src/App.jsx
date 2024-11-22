@@ -19,9 +19,6 @@ import InfoManagement from "./components/InfoManagement";
 import InfoAndSociety from "./components/InfoAndSociety";
 import SoftDev from "./components/SoftDev";
 
-import Word from "./pages/Word";
-import UploadWords from "./pages/UploadWords";
-
 function App() {
   return (
     <Router>
