@@ -1,5 +1,6 @@
 import React from "react";
 import TopicPage from "./TopicPage";
+import WordsList from "./WordsList";
 
 function InfoAndSociety() {
   const title = "Information and Society";
@@ -28,7 +29,12 @@ function InfoAndSociety() {
     },
   ];
 
-  return <TopicPage title={title} description={description} cards={cards} />;
+  return (
+    <div>
+      <TopicPage title={title} description={description} cards={cards} />
+      <WordsList category="Information and Society" />
+    </div>
+  );
 }
 
 export default InfoAndSociety;

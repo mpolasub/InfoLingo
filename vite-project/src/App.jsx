@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Footer from "./components/footer"
+import Footer from "./components/footer";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Leaderboard from "./pages/Leaderboard";
@@ -18,7 +18,6 @@ import InfoAssurance from "./components/InfoAssurance";
 import InfoManagement from "./components/InfoManagement";
 import InfoAndSociety from "./components/InfoAndSociety";
 import SoftDev from "./components/SoftDev";
-
 
 function App() {
   return (

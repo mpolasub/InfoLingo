@@ -1,5 +1,6 @@
 import React from "react";
 import TopicPage from "./TopicPage";
+import WordsList from "./WordsList";
 
 function SoftDev() {
   const title = "Software Development";
@@ -28,7 +29,12 @@ function SoftDev() {
     },
   ];
 
-  return <TopicPage title={title} description={description} cards={cards} />;
+  return (
+    <div>
+      <TopicPage title={title} description={description} cards={cards} />
+      <WordsList category="Software Development" />
+    </div>
+  );
 }
 
 export default SoftDev;

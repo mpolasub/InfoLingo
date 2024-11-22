@@ -1,5 +1,7 @@
 import React from "react";
 import TopicPage from "./TopicPage";
+import WordsList from "./WordsList";
+
 
 function HCI() {
   const title = "Human-Center Interaction";
@@ -28,7 +30,13 @@ function HCI() {
     },
   ];
 
-  return <TopicPage title={title} description={description} cards={cards} />;
+  return (
+    <div>
+      <TopicPage title={title} description={description} cards={cards} />
+      <WordsList category="Human-Computer Interaction" />
+    </div>
+  );
+
 }
 
 export default HCI;

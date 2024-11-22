@@ -1,5 +1,7 @@
 import React from "react";
 import TopicPage from "./TopicPage";
+import WordsList from "./WordsList";
+
 
 function HealthAndWellBeing() {
   const title = "Health and Well Being";
@@ -28,7 +30,12 @@ function HealthAndWellBeing() {
     },
   ];
 
-  return <TopicPage title={title} description={description} cards={cards} />;
+  return (
+    <div>
+      <TopicPage title={title} description={description} cards={cards} />
+      <WordsList category="Health & Well-Being" />
+    </div>
+  );
 }
 
 export default HealthAndWellBeing;
