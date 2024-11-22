@@ -32,7 +32,7 @@ function App() {
         <Route path="/games" element={<Games />} />
         <Route path="/word" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
-        <Route path="/index" element={<Homepage />} />
+        <Route path="/Homepage" element={<Homepage />} />
 
         {/* topics */}
         <Route path="/DataScience" element={<DataScience />} />
