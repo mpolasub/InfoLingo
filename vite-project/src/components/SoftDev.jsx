@@ -4,7 +4,7 @@ import TopicPage from "./TopicPage";
 function SoftDev() {
   const title = "Software Development";
   const description =
-    "Learn essential principles to enhance your skills in creating innovative software solutions.;
+    "Learn essential principles to enhance your skills in creating innovative software solutions.";
   const cards = [
     {
       title: "Explore New Terms",
