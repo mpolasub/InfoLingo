@@ -7,7 +7,6 @@ import Signup from "./pages/Signup";
 import Leaderboard from "./pages/Leaderboard";
 import VocabQuiz from "./pages/VocabQuiz";
 import Games from "./pages/Games";
-<<<<<<< HEAD
 import Homepage from "./components/Homepage";
 import Word from "./pages/Word";
 import UploadWords from "./pages/UploadWords";
@@ -20,10 +19,8 @@ import InfoManagement from "./components/InfoManagement";
 import InfoAndSociety from "./components/InfoAndSociety";
 import SoftDev from "./components/SoftDev";
 
-=======
 import Word from "./pages/Word";
 import UploadWords from "./pages/UploadWords";
->>>>>>> 6a5a306996b52be5d48df6127fbb4638e4de7637
 
 function App() {
   return (
@@ -37,7 +34,6 @@ function App() {
         <Route path="/games" element={<Games />} />
         <Route path="/word" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
-<<<<<<< HEAD
         <Route path="/Homepage" element={<Homepage />} />
 
         {/* topics */}
@@ -50,8 +46,6 @@ function App() {
         <Route path="/InfoAndSociety" element={<InfoAndSociety />} />
         <Route path="/SoftDev" element={<SoftDev />} />
 
-=======
->>>>>>> 6a5a306996b52be5d48df6127fbb4638e4de7637
       </Routes>
       <Footer />
     </Router>
