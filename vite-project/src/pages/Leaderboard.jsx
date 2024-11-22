@@ -37,9 +37,7 @@ function Leaderboard() {
           onClick={handleRefresh}
         />
       </div>
-      <footer>
-        <p>© 2024 InfoLingo. All rights reserved.</p>
-      </footer>
+      
     </div>
   );
 }
