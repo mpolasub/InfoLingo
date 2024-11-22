@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import UniversalButton from "../components/UniversalButton";
 import "../style.css";
 
-function Signup() {
+function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${userDetails.username}`) }) {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
   const handleSignup = () => {
-    alert("Sign Up button clicked!");
+    if (!username || !password) {
+      setError("Please fill in all fields.");
+      return;
+    }
+    setError("");
+    const userDetails = { username, password };
+    onSignup(userDetails); 
   };
 
   return (
     <div className="page-container">
       <div className="form-container">
         <div className="logo">
-          {/* Optional: Add logo here */}
+        
         </div>
         <h1>Sign Up</h1>
-        <form>
+        <form onSubmit={(e) => e.preventDefault()}>
           <div className="form-group">
             <label htmlFor="username">Username</label>
             <input
@@ -23,6 +33,8 @@ function Signup() {
               id="username"
               name="username"
               placeholder="Enter username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div className="form-group">
@@ -32,8 +44,11 @@ function Signup() {
               id="password"
               name="password"
               placeholder="Enter password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
+          {error && <p className="error-message">{error}</p>}
           <UniversalButton
             label="Sign Up"
             variant="dark"
