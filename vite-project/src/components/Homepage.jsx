@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
 import UniversalButton from "./UniversalButton";
-import Homepage from './Homepage';
 import "../style.css"; 
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (

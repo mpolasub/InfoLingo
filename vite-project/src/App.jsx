@@ -10,14 +10,14 @@ import Games from "./pages/Games";
 import Homepage from "./components/Homepage";
 import Word from "./pages/Word";
 import UploadWords from "./pages/UploadWords";
-import DataScience from "./DataScience";
-import HealthAndWellBeing from "./HealthAndWellBeing";
-import HCI from "./HCI";
-import InfoArch from "./InfoArch";
-import InfoAssurance from "./InfoAssurance";
-import InfoManagement from "./InfoManagement";
-import InfoAndSociety from "./InfoAndSociety";
-import SoftDev from "./SoftDev";
+import DataScience from "./components/DataScience";
+import HealthAndWellBeing from "./components/HealthAndWellBeing";
+import HCI from "./components/HCI";
+import InfoArch from "./components/InfoArch";
+import InfoAssurance from "./components/InfoAssurance";
+import InfoManagement from "./components/InfoManagement";
+import InfoAndSociety from "./components/InfoAndSociety";
+import SoftDev from "./components/SoftDev";
 
 
 function App() {
