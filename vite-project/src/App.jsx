@@ -7,7 +7,7 @@ import Signup from "./pages/Signup";
 import Leaderboard from "./pages/Leaderboard";
 import VocabQuiz from "./pages/VocabQuiz";
 import Games from "./pages/Games";
-import Homepage from "./pages/Homepage";
+import Homepage from "./components/Homepage";
 import Word from "./pages/Word";
 import UploadWords from "./pages/UploadWords";
 import DataScience from "./components/DataScience";

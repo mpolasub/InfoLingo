@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import UniversalButton from "../components/UniversalButton";
+import Navbar from "./Navbar";
+import UniversalButton from "./UniversalButton";
 import "../style.css"; 
 
 
