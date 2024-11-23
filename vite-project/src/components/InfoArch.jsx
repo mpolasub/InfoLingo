@@ -33,8 +33,6 @@ function InfoArch() {
     },
   ];
 
-  
-
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
