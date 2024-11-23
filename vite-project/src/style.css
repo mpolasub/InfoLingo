@@ -431,21 +431,21 @@ ul {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-}
+    color: black !important;
 
-.text-box input[type=text],
-.text-box select {
-    font-family: inherit; 
-    color: inherit;
-}
-
-.text-box select {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 1.5rem center;
     background-size: 1.5rem;
     padding-right: 3rem;
 }
+
+.text-box select option {
+  color: black;
+  background-color: white;
+}
+
+
 
 .text-box input[type=text].error,
 .text-box select.error {
@@ -483,7 +483,7 @@ ul {
 .upload-submit {
   margin-top: 2rem;
   padding:auto;
-  width: 6rem;
+  width: 8rem;
 }
 
 .submit-container {
@@ -495,6 +495,8 @@ ul {
   margin: 0 auto;
   width: 90%;
 }
+
+
 .card.mb-4 {
   background-color: lavender;
   color: black;
