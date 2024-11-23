@@ -7,7 +7,7 @@ function Navbar() {
     <header>
       <div className="navbar">
         <div className="logo-container">
-          <img src="/img/InfoLingoLogo.png" alt="InfoLingo Logo" />
+          <img src="./img/InfoLingoLogo.png" alt="InfoLingo Logo" />
         </div>
         <div className="nav-links">
           <Link to="/Homepage">Home</Link>

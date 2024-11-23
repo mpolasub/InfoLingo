@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Leaderboard from "./pages/Leaderboard";
-import VocabQuiz from "./pages/VocabQuiz";
-import Games from "./pages/Games";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import Leaderboard from "./components/Leaderboard";
+import VocabQuiz from "./components/VocabQuiz";
+import Games from "./components/Games";
 import Homepage from "./components/Homepage";
-import Word from "./pages/Word";
-import UploadWords from "./pages/UploadWords";
+import Word from "./components/Word";
+import UploadWords from "./components/UploadWords";
 import DataScience from "./components/DataScience";
 import HealthAndWellBeing from "./components/HealthAndWellBeing";
 import HCI from "./components/HCI";
@@ -18,6 +18,7 @@ import InfoAssurance from "./components/InfoAssurance";
 import InfoManagement from "./components/InfoManagement";
 import InfoAndSociety from "./components/InfoAndSociety";
 import SoftDev from "./components/SoftDev";
+import WordsList from "./components/WordsList";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/word" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
         <Route path="/Homepage" element={<Homepage />} />
+        <Route path="WordsList" element={<WordsList />} />
 
         {/* topics */}
         <Route path="/DataScience" element={<DataScience />} />

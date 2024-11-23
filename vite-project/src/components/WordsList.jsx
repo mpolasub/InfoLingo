@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import words from "../word-bank.json";
 import "../style.css";
 
-function WordsList({ category }) {
+
+function WordsList( { category } ) {
+ 
   // Filter words based on the category
   const filteredWords = words.filter(wordObj => wordObj.category.includes(category));
 
@@ -25,6 +27,7 @@ function WordsList({ category }) {
       </ul>
     </div>
   );
+
 }
 
 export default WordsList;

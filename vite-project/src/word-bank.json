@@ -5,7 +5,8 @@
         "example": "The algorithm analyzes patterns in the data to make predictions.",
         "category": [
             "Data Science"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "big data",
@@ -13,7 +14,8 @@
         "example": "Big data analytics helps organizations make data-driven decisions in real-time.",
         "category": [
             "Data Science"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "machine learning",
@@ -21,7 +23,8 @@
         "example": "Machine learning algorithms can automatically improve their performance as they are exposed to more data.",
         "category": [
             "Data Science"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "data cleaning",
@@ -29,7 +32,8 @@
         "example": "Data cleaning is crucial to ensure that the insights drawn from data are accurate.",
         "category": [
             "Data Science"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "predictive modeling",
@@ -37,7 +41,8 @@
         "example": "Predictive modeling is used to forecast sales based on past purchasing behavior.",
         "category": [
             "Data Science"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "data visualization",
@@ -45,7 +50,8 @@
         "example": "Data visualization tools like Tableau allow analysts to present complex data in a more digestible format.",
         "category": [
             "Data Science"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "wellness",
@@ -53,7 +59,8 @@
         "example": "Regular exercise and a balanced diet are key components of wellness.",
         "category": [
             "Health & Well-Being"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "mental health",
@@ -61,7 +68,8 @@
         "example": "Taking care of mental health is just as important as taking care of physical health.",
         "category": [
             "Health & Well-Being"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "nutrition",
@@ -69,7 +77,8 @@
         "example": "A balanced diet with proper nutrition is essential for maintaining energy levels throughout the day.",
         "category": [
             "Health & Well-Being"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "exercise",
@@ -77,7 +86,8 @@
         "example": "Regular exercise can help reduce stress and increase overall physical fitness.",
         "category": [
             "Health & Well-Being"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "sleep hygiene",
@@ -85,7 +95,8 @@
         "example": "Maintaining good sleep hygiene, such as keeping a regular sleep schedule, can improve sleep quality.",
         "category": [
             "Health & Well-Being"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "stress management",
@@ -93,7 +104,8 @@
         "example": "Practices like meditation and mindfulness are effective tools for stress management.",
         "category": [
             "Health & Well-Being"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "usability",
@@ -101,7 +113,8 @@
         "example": "The usability of the app was improved after the interface was redesigned based on user feedback.",
         "category": [
             "Human-Computer Interaction"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "user interface",
@@ -109,7 +122,8 @@
         "example": "A clean and intuitive user interface can enhance the overall user experience.",
         "category": [
             "Human-Computer Interaction"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
         "word": "interaction design",
@@ -117,166 +131,142 @@
         "example": "Good interaction design ensures that users can accomplish their tasks efficiently and with ease.",
         "category": [
             "Human-Computer Interaction"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "accessibility",
-        "definition": "The design of products, devices, or environments for people with disabilities.",
-        "example": "Accessibility features, such as screen readers and text-to-speech, make digital content more inclusive.",
-        "category": [
-            "Human-Computer Interaction"
-        ]
-    },
-    {
-        "word": "affordance",
-        "definition": "The property of an object that suggests its function to the user.",
-        "example": "The button's raised edges provide an affordance, indicating that it can be clicked.",
-        "category": [
-            "Human-Computer Interaction"
-        ]
-    },
-    {
-        "word": "persona",
-        "definition": "A fictional character created to represent a user type, used in user-centered design.",
-        "example": "The design team created several personas to guide the development of the new app interface.",
-        "category": [
-            "Human-Computer Interaction"
-        ]
-    },
-    {
-        "word": "taxonomy",
-        "definition": "The classification of information into a system or hierarchy, often used in websites or digital content.",
-        "example": "The website's taxonomy allowed users to easily navigate through different categories of content.",
+        "word": "findability",
+        "definition": "The ability of users to locate information or resources on a website or system.",
+        "example": "Improving findability ensures that users can quickly locate the information they need in a large repository.",
         "category": [
             "Information Architecture"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "metadata",
-        "definition": "Data that provides information about other data, such as the author, date of creation, or format.",
-        "example": "Metadata helps in organizing digital resources and improving searchability.",
+        "word": "content strategy",
+        "definition": "Planning, development, and management of content in digital or physical formats.",
+        "example": "A robust content strategy ensures that all web pages align with the organization’s goals.",
         "category": [
             "Information Architecture"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "wireframe",
-        "definition": "A visual representation of a web page or app interface used in the early stages of design.",
-        "example": "The wireframe of the website was shared with stakeholders for feedback before any coding began.",
+        "word": "ontology",
+        "definition": "A formal representation of knowledge as a set of concepts within a domain and the relationships between them.",
+        "example": "The ontology of the library's catalog organizes books into clear categories and subcategories.",
         "category": [
             "Information Architecture"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "card sorting",
-        "definition": "A technique used in information architecture to organize content based on user understanding.",
-        "example": "Card sorting helped the team determine how to best categorize the website’s features.",
-        "category": [
-            "Information Architecture"
-        ]
-    },
-    {
-        "word": "site map",
-        "definition": "A visual representation of the structure of a website, showing the relationships between pages.",
-        "example": "The site map helped the developers understand how the various pages of the website should be linked together.",
-        "category": [
-            "Information Architecture"
-        ]
-    },
-    {
-        "word": "navigation",
-        "definition": "The system of menus, buttons, and links used to guide users through a website or application.",
-        "example": "Effective navigation allows users to quickly find the information they're looking for on a website.",
-        "category": [
-            "Information Architecture"
-        ]
-    },
-    {
-        "word": "firewall",
-        "definition": "A network security system that monitors and controls incoming and outgoing network traffic.",
-        "example": "The firewall blocked unauthorized access to the company's internal network.",
+        "word": "zero trust",
+        "definition": "A cybersecurity model that assumes no user or device can be trusted by default, even within a network.",
+        "example": "Zero trust architecture reduces the risk of unauthorized access to sensitive systems.",
         "category": [
             "Information Assurance and Cybersecurity"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "encryption",
-        "definition": "The process of converting information or data into a code to prevent unauthorized access.",
-        "example": "Sensitive data was encrypted before transmission to ensure its security.",
+        "word": "penetration testing",
+        "definition": "A security assessment technique where authorized simulated attacks are used to identify vulnerabilities.",
+        "example": "Penetration testing revealed several weaknesses in the network's firewall.",
         "category": [
             "Information Assurance and Cybersecurity"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "phishing",
-        "definition": "A type of cyber attack in which fraudulent communications are made to trick individuals into revealing personal information.",
-        "example": "The employee almost fell victim to a phishing scam that appeared to come from the IT department.",
+        "word": "threat modeling",
+        "definition": "The process of identifying and prioritizing potential security threats to a system.",
+        "example": "Threat modeling helped the organization develop a comprehensive defense strategy.",
         "category": [
             "Information Assurance and Cybersecurity"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "malware",
-        "definition": "Software designed to disrupt, damage, or gain unauthorized access to a computer system.",
-        "example": "The company’s antivirus software detected and removed the malware before it could cause any damage.",
-        "category": [
-            "Information Assurance and Cybersecurity"
-        ]
-    },
-    {
-        "word": "two-factor authentication",
-        "definition": "A security process in which the user provides two forms of identification before gaining access to an account.",
-        "example": "Two-factor authentication adds an extra layer of security to online accounts.",
-        "category": [
-            "Information Assurance and Cybersecurity"
-        ]
-    },
-    {
-        "word": "ransomware",
-        "definition": "A type of malware that locks or encrypts a victim's data and demands payment to restore access.",
-        "example": "The organization had to pay the ransom after falling victim to a ransomware attack.",
-        "category": [
-            "Information Assurance and Cybersecurity"
-        ]
-    },
-    {
-        "word": "data governance",
-        "definition": "The process of managing the availability, usability, integrity, and security of data used in an organization.",
-        "example": "Data governance policies ensure that sensitive information is protected and properly managed.",
+        "word": "data stewardship",
+        "definition": "The responsibility of managing and overseeing an organization's data to ensure its quality and integrity.",
+        "example": "Data stewardship programs ensure data consistency across multiple departments.",
         "category": [
             "Information Management"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "document management",
-        "definition": "The process of storing, managing, and tracking electronic documents and images.",
-        "example": "Document management systems help organizations organize and retrieve documents efficiently.",
+        "word": "data lineage",
+        "definition": "The process of tracking and documenting the flow of data from its origin to its destination.",
+        "example": "Data lineage tools help organizations understand how data moves through their systems.",
         "category": [
             "Information Management"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "metadata management",
-        "definition": "The process of organizing and maintaining metadata to ensure consistency and accuracy across systems.",
-        "example": "Effective metadata management improves the quality and searchability of data across databases.",
+        "word": "master data management",
+        "definition": "A method used to define and manage an organization's critical data to provide a single point of reference.",
+        "example": "Master data management ensures consistency across all business systems.",
         "category": [
             "Information Management"
-        ]
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "data warehouse",
-        "definition": "A system used for reporting and data analysis, typically storing large volumes of historical data.",
-        "example": "The company uses a data warehouse to store and analyze years of sales data.",
+        "word": "digital divide",
+        "definition": "The gap between individuals or communities that have access to digital technologies and those that do not.",
+        "example": "Efforts to close the digital divide focus on providing internet access to underserved areas.",
         "category": [
-            "Information Management"
-        ]
+            "Information & Society"
+        ],
+        "part-of-speech": "noun"
     },
     {
-        "word": "content management",
-        "definition": "The process of managing digital content through its lifecycle, including creation, storage, and publishing.",
-        "example": "Content management systems help teams collaborate on creating and distributing content.",
+        "word": "net neutrality",
+        "definition": "The principle that internet service providers must treat all data on the internet equally without discrimination.",
+        "example": "Net neutrality laws prevent ISPs from throttling specific types of content.",
         "category": [
-            "Information Management"
-        ]
+            "Information & Society"
+        ],
+        "part-of-speech": "noun"
+    },
+    {
+        "word": "information ethics",
+        "definition": "The study of moral issues related to information creation, dissemination, and use.",
+        "example": "Information ethics ensures fair and equitable access to digital content for all users.",
+        "category": [
+            "Information & Society"
+        ],
+        "part-of-speech": "noun"
+    },
+    {
+        "word": "refactoring",
+        "definition": "The process of restructuring existing code to improve its readability and maintainability without changing its functionality.",
+        "example": "Refactoring the legacy code reduced bugs and made it easier to understand.",
+        "category": [
+            "Software Development"
+        ],
+        "part-of-speech": "noun"
+    },
+    {
+        "word": "continuous integration",
+        "definition": "A software development practice where code changes are automatically built, tested, and merged into a shared repository.",
+        "example": "Continuous integration helps teams detect errors early in the development cycle.",
+        "category": [
+            "Software Development"
+        ],
+        "part-of-speech": "noun"
+    },
+    {
+        "word": "agile methodology",
+        "definition": "An iterative approach to software development that focuses on collaboration, flexibility, and delivering small, incremental changes.",
+        "example": "Using agile methodology, the team delivered new features every two weeks.",
+        "category": [
+            "Software Development"
+        ],
+        "part-of-speech": "noun"
     }
 ]
