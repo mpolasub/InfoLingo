@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 import "../style.css";
 
 
@@ -17,9 +18,9 @@ function TopicPage({ title, description, cards }) {
               <div className="card-body">
                 <h5 className="card-title"><strong>{card.title}</strong></h5>
                 <p className="card-text">{card.text}</p>
-                <button type="button" className="btn btn-dark">
+                <Link to={card.link} className="btn btn-dark">
                   {card.buttonText}
-                </button>
+                </Link>
               </div>
             </div>
           </div>
