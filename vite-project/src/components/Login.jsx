@@ -1,30 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import UniversalButton from "../components/UniversalButton";
+import UniversalButton from "./UniversalButton";
 import "../style.css";
 
-function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${userDetails.username}`) }) {
+function Login({ onLogin = (username) => alert(`Logged in as ${username}`) }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSignup = () => {
+  const handleLogin = () => {
     if (!username || !password) {
       setError("Please fill in all fields.");
       return;
     }
     setError("");
-    const userDetails = { username, password };
-    onSignup(userDetails); 
+    onLogin(username); 
   };
 
   return (
-    <div className="page-container">
+    <div>
       <div className="form-container">
-        <div className="logo">
-        
-        </div>
-        <h1>Sign Up</h1>
+        <h1>Log In</h1>
         <form onSubmit={(e) => e.preventDefault()}>
           <div className="form-group">
             <label htmlFor="username">Username</label>
@@ -50,17 +46,17 @@ function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${
           </div>
           {error && <p className="error-message">{error}</p>}
           <UniversalButton
-            label="Sign Up"
+            label="Enter"
             variant="dark"
-            onClick={handleSignup}
+            onClick={handleLogin}
           />
         </form>
-        <p className="redirect-text">
-          Already have an account? <Link to="/login">Log In</Link>
+        <p className="signup-prompt">
+          Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
       </div>
     </div>
   );
 }
 
-export default Signup;
+export default Login;

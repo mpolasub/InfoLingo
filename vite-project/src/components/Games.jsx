@@ -1,9 +1,9 @@
 // vite-project/src/pages/Games.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import UniversalButton from "../components/UniversalButton";
-import Footer from "../components/Footer";
+import Navbar from "./Navbar";
+import UniversalButton from "./UniversalButton";
+import Footer from "./Footer";
 import "../style.css";
 
 function Games() {
