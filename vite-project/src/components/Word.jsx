@@ -26,8 +26,8 @@ function Word() {
             <div className="flex-top">
                 <div className="word-container">
                     <span className="current-word">{wordObj.word}</span>
-                    <span id="volume-button"><i className="fa-solid fa-volume-high"></i></span>
-                    <div id="part-of-speech">{wordObj.partOfSpeech}</div> {/*need to implement*/}
+                    <span className="volume-button"><i className="fa-solid fa-volume-high"></i></span>
+                    <div>{wordObj.partOfSpeech}</div> {/*need to implement*/}
                 </div>
                 <UniversalButton label="Save" variant="dark" isFlexible="true" customClass="save-word"></UniversalButton>
             </div>

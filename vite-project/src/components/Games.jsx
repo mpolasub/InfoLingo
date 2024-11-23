@@ -3,7 +3,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import UniversalButton from "./UniversalButton";
-import Footer from "./Footer";
 import "../style.css";
 
 function Games() {
