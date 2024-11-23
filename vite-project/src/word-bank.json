@@ -6,7 +6,7 @@
         "category": [
             "Data Science"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "big data",
@@ -15,7 +15,7 @@
         "category": [
             "Data Science"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "machine learning",
@@ -24,7 +24,7 @@
         "category": [
             "Data Science"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "data cleaning",
@@ -33,7 +33,7 @@
         "category": [
             "Data Science"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "predictive modeling",
@@ -42,7 +42,7 @@
         "category": [
             "Data Science"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "data visualization",
@@ -51,7 +51,7 @@
         "category": [
             "Data Science"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "wellness",
@@ -60,7 +60,7 @@
         "category": [
             "Health & Well-Being"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "mental health",
@@ -69,7 +69,7 @@
         "category": [
             "Health & Well-Being"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "nutrition",
@@ -78,7 +78,7 @@
         "category": [
             "Health & Well-Being"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "exercise",
@@ -87,7 +87,7 @@
         "category": [
             "Health & Well-Being"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "sleep hygiene",
@@ -96,7 +96,7 @@
         "category": [
             "Health & Well-Being"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "stress management",
@@ -105,7 +105,7 @@
         "category": [
             "Health & Well-Being"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "usability",
@@ -114,7 +114,7 @@
         "category": [
             "Human-Computer Interaction"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "user interface",
@@ -123,7 +123,7 @@
         "category": [
             "Human-Computer Interaction"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "interaction design",
@@ -132,7 +132,7 @@
         "category": [
             "Human-Computer Interaction"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "findability",
@@ -141,7 +141,7 @@
         "category": [
             "Information Architecture"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "content strategy",
@@ -150,7 +150,7 @@
         "category": [
             "Information Architecture"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "ontology",
@@ -159,7 +159,7 @@
         "category": [
             "Information Architecture"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "zero trust",
@@ -168,7 +168,7 @@
         "category": [
             "Information Assurance and Cybersecurity"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "penetration testing",
@@ -177,7 +177,7 @@
         "category": [
             "Information Assurance and Cybersecurity"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "threat modeling",
@@ -186,7 +186,7 @@
         "category": [
             "Information Assurance and Cybersecurity"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "data stewardship",
@@ -195,7 +195,7 @@
         "category": [
             "Information Management"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "data lineage",
@@ -204,7 +204,7 @@
         "category": [
             "Information Management"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "master data management",
@@ -213,7 +213,7 @@
         "category": [
             "Information Management"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "digital divide",
@@ -222,7 +222,7 @@
         "category": [
             "Information & Society"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "net neutrality",
@@ -231,7 +231,7 @@
         "category": [
             "Information & Society"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "information ethics",
@@ -240,7 +240,7 @@
         "category": [
             "Information & Society"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "refactoring",
@@ -249,7 +249,7 @@
         "category": [
             "Software Development"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "continuous integration",
@@ -258,7 +258,7 @@
         "category": [
             "Software Development"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     },
     {
         "word": "agile methodology",
@@ -267,6 +267,6 @@
         "category": [
             "Software Development"
         ],
-        "part-of-speech": "noun"
+        "partOfSpeech": "noun"
     }
 ]

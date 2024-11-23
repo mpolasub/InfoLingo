@@ -15,11 +15,23 @@ function UploadWords(props) {
         "Software Development"
     ];
 
+    const partsOfSpeech = [
+        "Noun",
+        "Pronoun",
+        "Verb",
+        "Adjective",
+        "Adverb",
+        "Preposition",
+        "Conjunction",
+        "Interjection"
+    ];
+
     const [formData, setFormData] = useState({
         word: "",
         definition: "",
         example: "",
-        category: []
+        category: [],
+        partOfSpeech: ""
     });
 
     // Add validation state
@@ -61,6 +73,9 @@ function UploadWords(props) {
         if (!formData.category.length || !formData.category[0]) {
             newErrors.category = "Category is required";
         }
+        if (!formData.partOfSpeech) {
+            newErrors.partOfSpeech = "Part of speech is required";
+        }
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -80,12 +95,13 @@ function UploadWords(props) {
             const updatedData = [...currentData, formData];
             
             // Log the data nicely formatted
-            console.group('Word Bank Update');
+            console.group('Word Bank Update (this is just a simulation for now)');
             console.log('New word added:', {
                 word: formData.word,
                 definition: formData.definition,
                 example: formData.example,
-                category: formData.category
+                category: formData.category,
+                partOfSpeech: formData.partOfSpeech
             });
             console.log('Total words in bank:', updatedData.length);
             console.groupEnd();
@@ -102,7 +118,7 @@ function UploadWords(props) {
 
     return (
         <div className="main-container">
-            <div>
+            <div className="center-helper">
                 <h1>Upload new word</h1>
                 <div>
                     <div className="text-enter">
@@ -151,6 +167,26 @@ function UploadWords(props) {
                         </div>
                     </div>
                     <div className="text-enter">
+                        <label className="box-label" htmlFor="partOfSpeech">Part of Speech:</label>
+                        <div className="text-box">
+                            <select
+                                id="partOfSpeech"
+                                name="partOfSpeech"
+                                value={formData.partOfSpeech}
+                                onChange={handleChange}
+                                className={errors.partOfSpeech ? "error" : ""}
+                            >
+                                <option value="">Select part of speech</option>
+                                {partsOfSpeech.map((part) => (
+                                    <option key={part} value={part.toLowerCase()}>
+                                        {part}
+                                    </option>
+                                ))}
+                            </select>
+                            {errors.partOfSpeech && <div className="error-message">{errors.partOfSpeech}</div>}
+                        </div>
+                    </div>
+                    <div className="text-enter">
                         <label className="box-label" htmlFor="category">Category:</label>
                         <div className="text-box">
                             <select
@@ -170,8 +206,10 @@ function UploadWords(props) {
                             {errors.category && <div className="error-message">{errors.category}</div>}
                         </div>
                     </div>
-                    <UniversalButton onClick={handleSubmit} label="Submit" variant="dark" 
-                        isFlexible="true" customClass="upload-submit" />
+                    <div className="submit-container">
+                        <UniversalButton onClick={handleSubmit} label="Submit" variant="dark" 
+                            isFlexible="true" customClass="upload-submit" />
+                    </div>
                 </div>
             </div>
         </div>
