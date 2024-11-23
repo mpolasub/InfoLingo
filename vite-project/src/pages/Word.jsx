@@ -21,29 +21,27 @@ function Word() {
       }
     
     return (
-        <div class="main-container">
-            <div class="flex-top">
-                <div class="word-container">
-                    <span class="current-word">{wordObj.word}</span>
-                    <span id="volume-button"><i class="fa-solid fa-volume-high"></i></span>
+        <div className="main-container">
+            <div className="flex-top">
+                <div className="word-container">
+                    <span className="current-word">{wordObj.word}</span>
+                    <span id="volume-button"><i className="fa-solid fa-volume-high"></i></span>
                     <div id="part-of-speech">noun</div> {/*need to implement*/}
                 </div>
-                <UniversalButton>Save</UniversalButton>
-                <button id="save-word">Save</button> {/*need to implement (change to universal button) */}
+                <UniversalButton label="Save" variant="dark" isFlexible="true" customClass="save-word"></UniversalButton>
             </div>
-            <div class="list-container">
-                <p class="list-heading">Definition:</p>
+            <div className="list-container">
+                <p className="list-heading">Definition:</p>
                 <ul>
                     <li>{wordObj.definition}</li>
                 </ul>
             </div>
-            <div class="list-container">
-                <p class="list-heading">Examples:</p>
+            <div className="list-container">
+                <p className="list-heading">Examples:</p>
                 <ul>
                     <li>{wordObj.example}</li>
                 </ul>
             </div>
-            {/*need to implement (list out category?)*/}
         </div>
     )
 }
