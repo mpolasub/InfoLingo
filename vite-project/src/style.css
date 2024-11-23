@@ -494,9 +494,16 @@ ul {
 .center-helper {
   margin: 0 auto;
   width: 90%;
-
-.card {
+}
+.card.mb-4 {
   background-color: lavender;
+  color: black;
+  margin-top: 1rem;
+  box-shadow: 10px 10px;
+}
+
+.card.activity-card {
+  background-color: #A58DD;
   color: black;
   margin-top: 1rem;
   box-shadow: 10px 10px;
