@@ -1,4 +1,6 @@
 import React from "react";
+import "../style.css";
+
 
 function TopicPage({ title, description, cards }) {
   return (
