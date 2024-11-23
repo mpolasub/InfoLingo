@@ -432,8 +432,32 @@ ul {
   width: 6rem;
 }
 
+.card {
+  background-color: lavender;
+  color: black;
+  margin-top: 1rem;
+  box-shadow: 10px 10px;
+}
 
+.topic-banner {
+  padding: 60px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  background-color: lavender;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
 
+.activity-card {
+  border-radius: 15px;
+  background-color: #A58DDE;
+  margin-bottom: 20px;
+}
+
+.topic-banner {
+  margin-top: 1rem;
+}
 
 
 
