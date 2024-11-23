@@ -407,32 +407,94 @@ ul {
 
 /*            upload  page           */
 
+
 .box-label {
-  font-size: 1.5rem;
-  text-decoration: underline;
+    font-size: 1.5rem;
+    text-decoration: underline;
 }
 
-.text-box input[type=text] {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  width: 90%;
-  font-size: 1.75rem;
-  padding: 1rem 1.5rem;
-  box-sizing: border-box;
-  border: 2px solid #DEDEDE;
-  border-radius: 1rem;
+.text-box input[type=text],
+.text-box select {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 1.75rem;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    border: 2px solid #DEDEDE;
+    border-radius: 1rem;
+}
+
+.text-box select {
+    background-color: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.text-box input[type=text],
+.text-box select {
+    font-family: inherit; 
+    color: inherit;
+}
+
+.text-box select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+    background-size: 1.5rem;
+    padding-right: 3rem;
+}
+
+.text-box input[type=text].error,
+.text-box select.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.text-box input[type=text]::placeholder {
+    color: #999;
+}
+
+.text-box select option {
+    font-size: 1.75rem;
+    padding: 1rem;
+}
+
+.text-box input[type=text]:hover,
+.text-box select:hover {
+    border-color: #BEBEBE;
+}
+
+.text-box input[type=text]:focus,
+.text-box select:focus {
+    border-color: #666666;
+    outline: none;
 }
 
 .upload-submit {
   margin-top: 2rem;
-  margin-right: auto;
-  margin-left: 80%;
-  /* float:right; */
   padding:auto;
   width: 6rem;
 }
 
+.submit-container {
+  display: flex;
+  justify-content: flex-end;
+}
 
+.center-helper {
+  margin: 0 auto;
+  width: 90%;
+}
 
 
 

@@ -7,7 +7,8 @@ const EXAMPLE_WORD = {
     "word": "JavaScript",
     "definition": "blah blah blah",
     "example": "blah blah blah",
-    "category": ["Programming"]
+    "category": ["Programming"],
+    "partOfSpeech": "noun"
   }
 
 function Word() {
@@ -26,7 +27,7 @@ function Word() {
                 <div className="word-container">
                     <span className="current-word">{wordObj.word}</span>
                     <span id="volume-button"><i className="fa-solid fa-volume-high"></i></span>
-                    <div id="part-of-speech">noun</div> {/*need to implement*/}
+                    <div id="part-of-speech">{wordObj.partOfSpeech}</div> {/*need to implement*/}
                 </div>
                 <UniversalButton label="Save" variant="dark" isFlexible="true" customClass="save-word"></UniversalButton>
             </div>
