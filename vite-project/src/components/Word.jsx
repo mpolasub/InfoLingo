@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import UniversalButton from "../components/UniversalButton";
+import UniversalButton from "./UniversalButton";
 import "../style.css";
 
 const EXAMPLE_WORD = {

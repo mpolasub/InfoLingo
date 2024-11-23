@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UniversalButton from "../components/UniversalButton";
+import UniversalButton from "./UniversalButton";
 import "../style.css";
 
 
