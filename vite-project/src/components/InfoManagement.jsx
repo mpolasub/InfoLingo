@@ -41,4 +41,4 @@ function InfoManagement() {
   );
 }
 
-export default InfoManagement;
+export default InfoManagement; 
