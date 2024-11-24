@@ -334,14 +334,14 @@ footer {
   font-size: 3rem;
 }
 
-#volume-button {
+.volume-button {
   position:relative;
   top: -0.25rem;
   margin-left: 1rem;
   font-size: 1.5rem;
 }
 
-#part-of-speech {
+.word-container div {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
