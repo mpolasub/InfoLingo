@@ -1,24 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import Leaderboard from "./components/Leaderboard";
-import VocabQuiz from "./components/VocabQuiz";
-import Games from "./components/Games";
-import Homepage from "./components/Homepage";
-import Word from "./components/Word";
-import UploadWords from "./components/UploadWords";
-import DataScience from "./components/DataScience";
-import HealthAndWellBeing from "./components/HealthAndWellBeing";
-import HCI from "./components/HCI";
-import InfoArch from "./components/InfoArch";
-import InfoAssurance from "./components/InfoAssurance";
-import InfoManagement from "./components/InfoManagement";
-import InfoAndSociety from "./components/InfoAndSociety";
-import SoftDev from "./components/SoftDev";
-import WordsList from "./components/WordsList";
+import Navbar from "./Navbar";
+import Footer from "./footer";
+import Login from "./Login";
+import Signup from "./Signup";
+import Leaderboard from "./Leaderboard";
+import VocabQuiz from "./VocabQuiz";
+import Games from "./Games";
+import Homepage from "./Homepage";
+import Word from "./Word";
+import UploadWords from "./UploadWords";
+import DataScience from "./DataScience";
+import HealthAndWellBeing from "./HealthAndWellBeing";
+import HCI from "./HCI";
+import InfoArch from "./InfoArch";
+import InfoAssurance from "./InfoAssurance";
+import InfoManagement from "./InfoManagement";
+import InfoAndSociety from "./InfoAndSociety";
+import SoftDev from "./SoftDev";
+import WordsList from "./WordsList";
 
 function App() {
   return (

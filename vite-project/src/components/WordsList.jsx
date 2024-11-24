@@ -4,8 +4,10 @@ import words from "../word-bank.json";
 import "../style.css";
 
 
-function WordsList( { category } ) {
+function WordsList(props) {
  
+  const category = props.category;
+  
   // Filter words based on the category
   const filteredWords = words.filter(wordObj => wordObj.category.includes(category));
 
