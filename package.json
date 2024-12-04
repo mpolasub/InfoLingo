@@ -15,7 +15,12 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "firebase": "^11.0.2",
+<<<<<<< HEAD
     "react-firebaseui": "https://gitpkg.now.sh/gvillenave/firebaseui-web-react/dist",
+=======
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+>>>>>>> fd9e9706e7a8f2d55cfc8ac3343e621e4947b7fc
     "react-router-dom": "^6.28.0"
   }
 }

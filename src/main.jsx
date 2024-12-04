@@ -1,18 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "./style.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
-);
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { BrowserRouter } from "react-router-dom";
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -31,8 +27,9 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 export const database = getDatabase(firebaseApp); // Export database for use in other components
 
-ReactDOM.createRoot(document.getElementById("App")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
 );

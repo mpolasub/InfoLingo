@@ -9,7 +9,7 @@ function WordsList(props) {
   const category = props.category;
   
   // Filter words based on the category
-  const filteredWords = words.filter(wordObj => wordObj.category.includes(category));
+  const filteredWords = Object.values(words).filter(wordObj => wordObj.category && wordObj.category.includes(category));
 
   return (
     <div className="word-list-container">
@@ -18,8 +18,7 @@ function WordsList(props) {
         {filteredWords.map((wordObj, index) => (
           <li key={index} className="word-item">
             <Link
-              to="/word"
-              state={{ wordObj }}
+              to={`/word/${wordObj.word}`}
               className="word-link"
             >
               {wordObj.word}

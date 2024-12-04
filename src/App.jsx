@@ -27,13 +27,16 @@ function App() {
     <div>
       <Navbar />
       <Routes>
+        {/* default route */}
+        <Route path="/" element={<Homepage />} />
+
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/VocabQuiz" element={<VocabQuiz />} />
         <Route path="/results" element={<ResultsPage />} /> {/* Add ResultsPage */}
         <Route path="/games" element={<Games />} />
-        <Route path="/word" element={<Word />} />
+        <Route path="/word/:currWord" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/WordsList" element={<WordsList />} />
@@ -47,7 +50,11 @@ function App() {
         <Route path="/infomanagement" element={<InfoManagement />} />
         <Route path="/infoandsociety" element={<InfoAndSociety />} />
         <Route path="/softdev" element={<SoftDev />} />
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> fd9e9706e7a8f2d55cfc8ac3343e621e4947b7fc
       </Routes>
       <Footer />
     </div>
