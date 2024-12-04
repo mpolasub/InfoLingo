@@ -1,59 +1,47 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import UniversalButton from "./UniversalButton";
 import "../style.css";
 
-function Login({ onLogin = (username) => alert(`Logged in as ${username}`) }) {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+function Login() {
   const [error, setError] = useState("");
+  const navigate = useNavigate(); 
 
-  const handleLogin = () => {
-    if (!username || !password) {
-      setError("Please fill in all fields.");
-      return;
+  const handleGoogleLogin = async () => {
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
+
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+
+      alert(`Logged in as ${user.displayName}`);
+      navigate("/homepage"); // Redirect to homepage
+    } catch (err) {
+      setError("Failed to log in with Google. Please try again.");
+      console.error("Google login error:", err);
     }
-    setError("");
-    onLogin(username); 
   };
 
   return (
     <div>
       <div className="form-container">
         <h1>Log In</h1>
-        <form onSubmit={(e) => e.preventDefault()}>
-          <div className="form-group">
-            <label htmlFor="username">Username</label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              placeholder="Enter username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Enter password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
-          {error && <p className="error-message">{error}</p>}
-          <UniversalButton
-            label="Enter"
-            variant="dark"
-            onClick={handleLogin}
-          />
-        </form>
+        <p>Choose a login method:</p>
+        
+        {/* Google Login Button */}
+        <UniversalButton
+          label="Log in with Google"
+          variant="dark"
+          onClick={handleGoogleLogin}
+        />
+
         <p className="signup-prompt">
           Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
+
+        {error && <p className="error-message">{error}</p>}
       </div>
     </div>
   );

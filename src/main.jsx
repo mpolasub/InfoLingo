@@ -4,10 +4,6 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "./style.css";
 
-ReactDOM.createRoot(document.getElementById("App")).render(
-    <App />
-);
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -26,3 +22,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+ReactDOM.createRoot(document.getElementById("App")).render(
+    <App />
+);
