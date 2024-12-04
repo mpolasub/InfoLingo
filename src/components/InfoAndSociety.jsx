@@ -17,7 +17,7 @@ function InfoAndSociety() {
         title: "Test Your Knowledge",
         text: "Challenge yourself with quizzes to assess your understanding.",
         buttonText: "TEST",
-        link: "/quiz"
+        link: "/VocabQuiz"
       },
       {
         title: "Play Against Friends",

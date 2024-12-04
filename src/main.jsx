@@ -4,15 +4,12 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "./style.css";
 
-<<<<<<< HEAD
-=======
 ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
         <App />
     </BrowserRouter>
 );
 
->>>>>>> c1342a5475f7d9722e8af3c6c2bb688e8d4fe074
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { BrowserRouter } from "react-router-dom";
@@ -30,14 +27,6 @@ const firebaseConfig = {
   appId: "1:1091886161225:web:200358bc8477fd299e8e98"
 };
 
-<<<<<<< HEAD
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-ReactDOM.createRoot(document.getElementById("App")).render(
-    <App />
-);
-=======
 // Initialize Firebase and Realtime Database
 const firebaseApp = initializeApp(firebaseConfig);
 export const database = getDatabase(firebaseApp); // Export database for use in other components
@@ -47,4 +36,3 @@ ReactDOM.createRoot(document.getElementById("App")).render(
     <App />
   </React.StrictMode>
 );
->>>>>>> c1342a5475f7d9722e8af3c6c2bb688e8d4fe074

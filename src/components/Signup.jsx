@@ -1,23 +1,38 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import UniversalButton from "./UniversalButton"; // Import the universal button
+import { Link, useNavigate } from "react-router-dom";
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import UniversalButton from "./UniversalButton";
 import "../style.css";
 
-function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${userDetails.username}`) }) {
+function Signup() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
+  const auth = getAuth();
 
-  const handleSignup = () => {
+  const handleSignup = async () => {
     if (!firstname || !lastname || !username || !password) {
       setError("Please fill in all fields.");
       return;
     }
     setError("");
-    const userDetails = { firstname, lastname, username, password };
-    onSignup(userDetails);
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, username, password);
+
+      await updateProfile(userCredential.user, {
+        displayName: `${firstname} ${lastname}`,
+      });
+
+      alert("Signup successful! You can now log in.");
+      navigate("/login"); // Redirect to login page
+    } catch (err) {
+      setError(err.message);
+      console.error("Signup error:", err);
+    }
   };
 
   return (
@@ -48,12 +63,12 @@ function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${
           />
         </div>
         <div className="form-group">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username">Email</label>
           <input
-            type="text"
+            type="email"
             id="username"
             name="username"
-            placeholder="Enter a username"
+            placeholder="Enter your email"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
@@ -72,8 +87,8 @@ function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${
         {error && <p className="error-message">{error}</p>}
         <UniversalButton
           label="Sign Up"
-          variant="dark" 
-          onClick={handleSignup} 
+          variant="dark"
+          onClick={handleSignup}
         />
       </form>
       <p className="redirect-text">

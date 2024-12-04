@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Navbar";
-import Footer from "./footer";
+import Footer from "./Footer";
 import Login from "./Login";
 import Signup from "./Signup";
 import Leaderboard from "./Leaderboard";
@@ -28,7 +28,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
-        <Route path="/quiz" element={<VocabQuiz />} />
+        <Route path="/VocabQuiz" element={<VocabQuiz />} />
         <Route path="/games" element={<Games />} />
         <Route path="/word" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
