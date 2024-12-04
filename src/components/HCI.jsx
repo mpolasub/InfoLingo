@@ -36,7 +36,7 @@ function HCI() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      <WordsList category="Human-Computer Interaction" />
+      {/* <WordsList category="Human-Computer Interaction" /> */}
     </div>
   );
 

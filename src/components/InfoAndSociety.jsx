@@ -36,7 +36,7 @@ function InfoAndSociety() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      <WordsList category="Information and Society" />
+      {/* <WordsList category="Information and Society" /> */}
     </div>
   );
 }

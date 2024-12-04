@@ -33,7 +33,7 @@ function App() {
         <Route path="/word" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
         <Route path="/Homepage" element={<Homepage />} />
-        <Route path="WordsList" element={<WordsList />} />
+        <Route path="/WordsList" element={<WordsList />} />
 
         {/* topics */}
         <Route path="/DataScience" element={<DataScience />} />

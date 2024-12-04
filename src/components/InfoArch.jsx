@@ -36,7 +36,7 @@ function InfoArch() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      <WordsList category="Information Architecture" />
+      {/* <WordsList category="Information Architecture" /> */}
     </div>
   );
 }
