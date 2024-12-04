@@ -394,7 +394,10 @@ ul {
   /* float:right; */
   padding:auto;
   width: 6rem;
+  justify-content: center;
 }
+
+/* .save-word  */
 
 
 /* #save-word {
