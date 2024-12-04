@@ -1,25 +1,43 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { getDatabase, ref, get } from "firebase/database";
 import UniversalButton from "./UniversalButton";
 import "../style.css";
 
-const EXAMPLE_WORD = {
-    "word": "JavaScript",
-    "definition": "blah blah blah",
-    "example": "blah blah blah",
-    "category": ["Programming"],
-    "partOfSpeech": "noun"
-  }
 
 function Word() {
     const location = useLocation();
     const navigate = useNavigate();
-    const { wordObj } = location.state || {};
-  
+    const { currWord } = useParams();
+    console.log("Current word parameter:", currWord); 
+
+    const [wordObj, setWordObj] = React.useState(null);
+    
+    useEffect(() => {
+        console.log("Effect running with word:", currWord); 
+        const db = getDatabase();
+        
+        const wordRef = ref(db, `/${currWord}`);
+        
+        get(wordRef)
+            .then((snapshot) => {
+                console.log("Firebase response:", snapshot.val());
+                if (snapshot.exists()) {
+                    setWordObj(snapshot.val());
+                } else {
+                    navigate("/", { replace: true });
+                }
+            })
+            .catch((error) => {
+                console.error("Error fetching word:", error);
+                navigate("/", { replace: true });
+            });
+    }, [currWord, navigate]);
+
     if (!wordObj) {
-        navigate("/", { replace: true });
         return null;
-      }
+    }
     
     return (
         <div className="main-container">
@@ -27,7 +45,7 @@ function Word() {
                 <div className="word-container">
                     <span className="current-word">{wordObj.word}</span>
                     <span className="volume-button"><i className="fa-solid fa-volume-high"></i></span>
-                    <div>{wordObj.partOfSpeech}</div> {/*need to implement*/}
+                    <div>{wordObj.partOfSpeech}</div> 
                 </div>
                 <UniversalButton label="Save" variant="dark" isFlexible="true" customClass="save-word"></UniversalButton>
             </div>

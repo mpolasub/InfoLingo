@@ -16,8 +16,7 @@ function WordsList( { category } ) {
         {filteredWords.map((wordObj, index) => (
           <li key={index} className="word-item">
             <Link
-              to="/word"
-              state={{ wordObj }}
+              to={`/word/${wordObj.word}`}
               className="word-link"
             >
               {wordObj.word}

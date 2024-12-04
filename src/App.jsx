@@ -25,12 +25,15 @@ function App() {
     <div>
       <Navbar />
       <Routes>
+        {/* default route */}
+        <Route path="/" element={<Homepage />} />
+
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/quiz" element={<VocabQuiz />} />
         <Route path="/games" element={<Games />} />
-        <Route path="/word" element={<Word />} />
+        <Route path="/word/:currWord" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
         <Route path="/Homepage" element={<Homepage />} />
         <Route path="WordsList" element={<WordsList />} />
