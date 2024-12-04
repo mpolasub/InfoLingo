@@ -1,11 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Leaderboard from "./components/Leaderboard";
 import VocabQuiz from "./components/VocabQuiz";
+import ResultsPage from "./components/ResultsPage"; // Import ResultsPage component
 import Games from "./components/Games";
 import Homepage from "./components/Homepage";
 import Word from "./components/Word";
@@ -32,22 +33,23 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/quiz" element={<VocabQuiz />} />
+        <Route path="/results" element={<ResultsPage />} /> {/* Add ResultsPage */}
         <Route path="/games" element={<Games />} />
         <Route path="/word/:currWord" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
-        <Route path="/Homepage" element={<Homepage />} />
-        <Route path="WordsList" element={<WordsList />} />
+        <Route path="/homepage" element={<Homepage />} />
+        <Route path="/wordslist" element={<WordsList />} />
 
-        {/* topics */}
-        <Route path="/DataScience" element={<DataScience />} />
-        <Route path="/HealthAndWellBeing" element={<HealthAndWellBeing />} />
-        <Route path="/HCI" element={<HCI />} />
-        <Route path="/Infoarch" element={<InfoArch />} />
-        <Route path="/InfoAssurance" element={<InfoAssurance />} />
-        <Route path="/Infomanagement" element={<InfoManagement />} />
-        <Route path="/InfoAndSociety" element={<InfoAndSociety />} />
-        <Route path="/SoftDev" element={<SoftDev />} />
-
+        {/* Topics */}
+        <Route path="/datascience" element={<DataScience />} />
+        <Route path="/healthandwellbeing" element={<HealthAndWellBeing />} />
+        <Route path="/hci" element={<HCI />} />
+        <Route path="/infoarch" element={<InfoArch />} />
+        <Route path="/infoassurance" element={<InfoAssurance />} />
+        <Route path="/infomanagement" element={<InfoManagement />} />
+        <Route path="/infoandsociety" element={<InfoAndSociety />} />
+        <Route path="/softdev" element={<SoftDev />} />
+        
       </Routes>
       <Footer />
     </div>
@@ -55,3 +57,4 @@ function App() {
 }
 
 export default App;
+
