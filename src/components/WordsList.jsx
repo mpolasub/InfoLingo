@@ -7,7 +7,7 @@ import "../style.css";
 function WordsList( { category } ) {
  
   // Filter words based on the category
-  const filteredWords = words.filter(wordObj => wordObj.category.includes(category));
+  const filteredWords = Object.values(words).filter(wordObj => wordObj.category && wordObj.category.includes(category));
 
   return (
     <div className="word-list-container">
