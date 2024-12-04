@@ -46,6 +46,7 @@ function App() {
         <Route path="/infomanagement" element={<InfoManagement />} />
         <Route path="/infoandsociety" element={<InfoAndSociety />} />
         <Route path="/softdev" element={<SoftDev />} />
+        
       </Routes>
       <Footer />
     </div>
