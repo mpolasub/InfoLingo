@@ -32,7 +32,7 @@ function SoftDev() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      <WordsList category="Software Development" />
+      {/* <WordsList category="Software Development" /> */}
     </div>
   );
 }

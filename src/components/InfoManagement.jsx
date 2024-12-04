@@ -36,7 +36,7 @@ function InfoManagement() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      <WordsList category="Information Management" />
+      {/* <WordsList category="Information Management" /> */}
     </div>
   );
 }
