@@ -4,9 +4,23 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "./style.css";
 
+<<<<<<< HEAD
 // Import Firebase configuration
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database"; // Import Firebase Realtime Database
+=======
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+);
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { BrowserRouter } from "react-router-dom";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+>>>>>>> fdd4081ad5b3329539c2083c3ae68cd0bbe34f08
 
 // Firebase configuration
 const firebaseConfig = {
