@@ -1,94 +1,102 @@
-import React, { useState } from "react";
-import UniversalButton from "./UniversalButton";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import words from "../word-bank.json";
 import "../style.css";
 
-
-function QuizHeader({ title, questionNumber, totalQuestions }) {
-  return (
-    <div className="quiz-header">
-      <h1 className="quiz-title">{title}</h1>
-      <h3 className="question-info">
-        Question {questionNumber}/{totalQuestions}
-      </h3>
-    </div>
-  );
-}
-
-
-function QuizInstruction({ heading, subheading }) {
-  return (
-    <div className="instruction">
-      <h2>{heading}</h2>
-      <h3>{subheading}</h3>
-    </div>
-  );
-}
-
-
-function QuestionBox({ definition, userInput, onInputChange }) {
-  return (
-    <div className="question-box">
-      <p className="definition-label">Definition</p>
-      <p className="definition-text">{definition}</p>
-      <input
-        type="text"
-        placeholder="Enter the word"
-        className="answer-input"
-        value={userInput}
-        onChange={(e) => onInputChange(e.target.value)}
-      />
-    </div>
-  );
-}
-
-// Button Container Component
-function ButtonContainer({ onNext, onSubmit }) {
-  return (
-    <div className="button-container">
-      <UniversalButton label="Next ➔" variant="light" onClick={onNext} />
-      <UniversalButton label="Submit" variant="dark" onClick={onSubmit} />
-    </div>
-  );
-}
-
-
 function VocabQuiz() {
-  const [userInput, setUserInput] = useState(""); 
-  const questionNumber = 1;
-  const totalQuestions = 4;
-  const definition = "";
+  const [questions, setQuestions] = useState([]);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [userInput, setUserInput] = useState("");
+  const [score, setScore] = useState(0);
+  const [userAnswers, setUserAnswers] = useState([]);
+  const navigate = useNavigate();
 
-  
-  const handleNext = () => {
-    console.log("Next button clicked");
+  const totalQuestions = 6;
+
+  useEffect(() => {
+   
+    const shuffledQuestions = words.sort(() => 0.5 - Math.random()).slice(0, totalQuestions);
+    setQuestions(shuffledQuestions);
+  }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const correctAnswer = questions[currentQuestionIndex]?.word.toLowerCase();
+    const isCorrect = userInput.trim().toLowerCase() === correctAnswer;
+
+    // Update the score if the answer is correct
+    if (isCorrect) {
+      setScore((prevScore) => prevScore + 1);
+    }
+
+   
+    setUserAnswers((prevAnswers) => [
+      ...prevAnswers,
+      {
+        question: questions[currentQuestionIndex]?.definition,
+        userInput: userInput.trim(),
+        correctAnswer: correctAnswer,
+        isCorrect: isCorrect,
+      },
+    ]);
+
+
+    if (currentQuestionIndex < totalQuestions - 1) {
+      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+      setUserInput(""); // Clear the input field
+    } else {
+      
+      navigate("/results", {
+        state: {
+          score: isCorrect ? score + 1 : score, 
+          totalQuestions,
+          userAnswers: [
+            ...userAnswers,
+            {
+              question: questions[currentQuestionIndex]?.definition,
+              userInput: userInput.trim(),
+              correctAnswer: correctAnswer,
+              isCorrect: isCorrect,
+            },
+          ],
+        },
+      });
+    }
   };
 
-  const handleSubmit = () => {
-    console.log("User Input:", userInput);
-  };
+  if (questions.length === 0) return <p className="loading">Loading questions...</p>;
+
+  const currentDefinition = questions[currentQuestionIndex]?.definition || "";
 
   return (
-    <div>
-      <main id="quiz-main">
-        <div className="quiz-container">
-          <QuizHeader
-            title="Vocabulary Quiz"
-            questionNumber={questionNumber}
-            totalQuestions={totalQuestions}
+    <main id="quiz-main">
+      <div className="quiz-container">
+        <header className="quiz-header">
+          <h1 className="quiz-title">Vocabulary Quiz</h1>
+          <p className="question-info">
+            Question {currentQuestionIndex + 1}/{totalQuestions}
+          </p>
+        </header>
+        <div className="question-box">
+          <label htmlFor="answer-input" className="definition-label">
+            Definition
+          </label>
+          <p className="definition-text">{currentDefinition}</p>
+          <input
+            id="answer-input"
+            className="answer-input"
+            type="text"
+            placeholder="Enter the word"
+            value={userInput}
+            onChange={(e) => setUserInput(e.target.value)}
           />
-          <QuizInstruction
-            heading="Welcome"
-            subheading="Type the word that matches the definition presented:"
-          />
-          <QuestionBox
-            definition={definition}
-            userInput={userInput}
-            onInputChange={setUserInput}
-          />
-          <ButtonContainer onNext={handleNext} onSubmit={handleSubmit} />
         </div>
-      </main>
-    </div>
+        <button className="universal-button submit" onClick={handleSubmit}>
+          Submit
+        </button>
+      </div>
+    </main>
   );
 }
 
