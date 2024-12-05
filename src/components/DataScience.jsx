@@ -36,11 +36,7 @@ function DataScience() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-<<<<<<< HEAD
       {/* <WordsList category="Data Science" /> */}
-=======
-      <WordsList category="Data Science" /> {/* just for testing */}
->>>>>>> fd9e9706e7a8f2d55cfc8ac3343e621e4947b7fc
     </div>
   );
 }

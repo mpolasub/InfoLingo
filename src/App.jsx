@@ -50,11 +50,7 @@ function App() {
         <Route path="/infomanagement" element={<InfoManagement />} />
         <Route path="/infoandsociety" element={<InfoAndSociety />} />
         <Route path="/softdev" element={<SoftDev />} />
-<<<<<<< HEAD
-
-=======
         
->>>>>>> fd9e9706e7a8f2d55cfc8ac3343e621e4947b7fc
       </Routes>
       <Footer />
     </div>

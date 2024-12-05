@@ -13,33 +13,34 @@ function Signup() {
   const navigate = useNavigate();
   const auth = getAuth();
 
-  const handleSignup = async () => {
+  function handleSignup() {
     if (!firstname || !lastname || !username || !password) {
       setError("Please fill in all fields.");
       return;
     }
+
     setError("");
-
-    try {
-      const userCredential = await createUserWithEmailAndPassword(auth, username, password);
-
-      await updateProfile(userCredential.user, {
-        displayName: `${firstname} ${lastname}`,
+    createUserWithEmailAndPassword(auth, username, password)
+      .then((userCredential) => {
+        return updateProfile(userCredential.user, {
+          displayName: `${firstname} ${lastname}`,
+        });
+      })
+      .then(() => {
+        alert("Signup successful! You can now log in.");
+        navigate("/login");
+      })
+      .catch((err) => {
+        setError(err.message);
+        console.error("Signup error:", err);
       });
-
-      alert("Signup successful! You can now log in.");
-      navigate("/login"); // Redirect to login page
-    } catch (err) {
-      setError(err.message);
-      console.error("Signup error:", err);
-    }
-  };
+  }
 
   return (
     <div className="form-container">
       <h1>Welcome</h1>
       <p>Create your Account</p>
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={(event) => event.preventDefault()}>
         <div className="form-group">
           <label htmlFor="firstname">Firstname</label>
           <input
@@ -48,7 +49,7 @@ function Signup() {
             name="firstname"
             placeholder="Enter your first name"
             value={firstname}
-            onChange={(e) => setFirstname(e.target.value)}
+            onChange={(event) => setFirstname(event.target.value)}
           />
         </div>
         <div className="form-group">
@@ -59,7 +60,7 @@ function Signup() {
             name="lastname"
             placeholder="Enter your last name"
             value={lastname}
-            onChange={(e) => setLastname(e.target.value)}
+            onChange={(event) => setLastname(event.target.value)}
           />
         </div>
         <div className="form-group">
@@ -70,7 +71,7 @@ function Signup() {
             name="username"
             placeholder="Enter your email"
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={(event) => setUsername(event.target.value)}
           />
         </div>
         <div className="form-group">
@@ -81,7 +82,7 @@ function Signup() {
             name="password"
             placeholder="Enter a password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(event) => setPassword(event.target.value)}
           />
         </div>
         {error && <p className="error-message">{error}</p>}

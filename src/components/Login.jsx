@@ -11,37 +11,38 @@ function Login() {
   const navigate = useNavigate();
   const auth = getAuth();
 
-  const handleGoogleLogin = async () => {
+  function handleGoogleLogin() {
     const provider = new GoogleAuthProvider();
 
-    try {
-      const result = await signInWithPopup(auth, provider);
-      const user = result.user;
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        alert(`Logged in as ${user.displayName}`);
+        navigate("/homepage");
+      })
+      .catch((err) => {
+        setError("Failed to log in with Google. Please try again.");
+        console.error("Google login error:", err);
+      });
+  }
 
-      alert(`Logged in as ${user.displayName}`);
-      navigate("/homepage");
-    } catch (err) {
-      setError("Failed to log in with Google. Please try again.");
-      console.error("Google login error:", err);
-    }
-  };
-
-  const handleEmailPasswordLogin = async () => {
+  function handleEmailPasswordLogin() {
     if (!username || !password) {
       setError("Please fill in all fields.");
       return;
     }
-    setError("");
 
-    try {
-      const userCredential = await signInWithEmailAndPassword(auth, username, password);
-      alert(`Logged in as ${userCredential.user.email}`);
-      navigate("/homepage");
-    } catch (err) {
-      setError("Invalid email or password. Please try again.");
-      console.error("Login error:", err);
-    }
-  };
+    setError("");
+    signInWithEmailAndPassword(auth, username, password)
+      .then((userCredential) => {
+        alert(`Logged in as ${userCredential.user.email}`);
+        navigate("/homepage");
+      })
+      .catch((err) => {
+        setError("Invalid email or password. Please try again.");
+        console.error("Login error:", err);
+      });
+  }
 
   return (
     <div className="form-container">
@@ -54,7 +55,7 @@ function Login() {
           name="username"
           placeholder="Enter your email"
           value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          onChange={(event) => setUsername(event.target.value)}
         />
       </div>
       <div className="form-group">
@@ -65,7 +66,7 @@ function Login() {
           name="password"
           placeholder="Enter your password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(event) => setPassword(event.target.value)}
         />
       </div>
       {error && <p className="error-message">{error}</p>}
