@@ -1,303 +1,302 @@
 {
-    "algorithm": {
-        "word": "algorithm",
-        "definition": "A process or set of rules to be followed in calculations or problem-solving operations.",
-        "example": "The algorithm analyzes patterns in the data to make predictions.",
-        "category": [
-            "Data Science"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "big data": {
-        "word": "big data",
-        "definition": "Large and complex data sets that are difficult to process with traditional data-processing software.",
-        "example": "Big data analytics helps organizations make data-driven decisions in real-time.",
-        "category": [
-            "Data Science"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "machine learning": {
-        "word": "machine learning",
-        "definition": "A type of artificial intelligence that allows computers to learn from data without being explicitly programmed.",
-        "example": "Machine learning algorithms can automatically improve their performance as they are exposed to more data.",
-        "category": [
-            "Data Science"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "data cleaning": {
-        "word": "data cleaning",
-        "definition": "The process of identifying and correcting errors or inconsistencies in data to improve its quality.",
-        "example": "Data cleaning is crucial to ensure that the insights drawn from data are accurate.",
-        "category": [
-            "Data Science"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "predictive modeling": {
-        "word": "predictive modeling",
-        "definition": "A statistical technique used to predict future outcomes based on historical data.",
-        "example": "Predictive modeling is used to forecast sales based on past purchasing behavior.",
-        "category": [
-            "Data Science"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "data visualization": {
-        "word": "data visualization",
-        "definition": "The graphical representation of data to help understand patterns, trends, and insights.",
-        "example": "Data visualization tools like Tableau allow analysts to present complex data in a more digestible format.",
-        "category": [
-            "Data Science"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "wellness": {
-        "word": "wellness",
-        "definition": "The state of being in good health, especially as an actively pursued goal.",
-        "example": "Regular exercise and a balanced diet are key components of wellness.",
-        "category": [
-            "Health & Well-Being"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "mental health": {
-        "word": "mental health",
-        "definition": "A person's emotional, psychological, and social well-being, affecting how they think, feel, and act.",
-        "example": "Taking care of mental health is just as important as taking care of physical health.",
-        "category": [
-            "Health & Well-Being"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "nutrition": {
-        "word": "nutrition",
-        "definition": "The process of providing or obtaining the food necessary for health and growth.",
-        "example": "A balanced diet with proper nutrition is essential for maintaining energy levels throughout the day.",
-        "category": [
-            "Health & Well-Being"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "exercise": {
-        "word": "exercise",
-        "definition": "Physical activity that is planned and structured to improve fitness and health.",
-        "example": "Regular exercise can help reduce stress and increase overall physical fitness.",
-        "category": [
-            "Health & Well-Being"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "sleep hygiene": {
-        "word": "sleep hygiene",
-        "definition": "Healthy habits and practices that promote quality sleep.",
-        "example": "Maintaining good sleep hygiene, such as keeping a regular sleep schedule, can improve sleep quality.",
-        "category": [
-            "Health & Well-Being"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "stress management": {
-        "word": "stress management",
-        "definition": "Techniques and strategies used to cope with and reduce stress.",
-        "example": "Practices like meditation and mindfulness are effective tools for stress management.",
-        "category": [
-            "Health & Well-Being"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "usability": {
-        "word": "usability",
-        "definition": "The ease of use and learnability of a human-computer interface.",
-        "example": "The usability of the app was improved after the interface was redesigned based on user feedback.",
-        "category": [
-            "Human-Computer Interaction"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "user interface": {
-        "word": "user interface",
-        "definition": "The means by which a user interacts with a computer or software system.",
-        "example": "A clean and intuitive user interface can enhance the overall user experience.",
-        "category": [
-            "Human-Computer Interaction"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "interaction design": {
-        "word": "interaction design",
-        "definition": "The design of the interaction between users and products, including the design of the interface and user experience.",
-        "example": "Good interaction design ensures that users can accomplish their tasks efficiently and with ease.",
-        "category": [
-            "Human-Computer Interaction"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "findability": {
-        "word": "findability",
-        "definition": "The ability of users to locate information or resources on a website or system.",
-        "example": "Improving findability ensures that users can quickly locate the information they need in a large repository.",
-        "category": [
-            "Information Architecture"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "content strategy": {
-        "word": "content strategy",
-        "definition": "Planning, development, and management of content in digital or physical formats.",
-        "example": "A robust content strategy ensures that all web pages align with the organization’s goals.",
-        "category": [
-            "Information Architecture"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "ontology": {
-        "word": "ontology",
-        "definition": "A formal representation of knowledge as a set of concepts within a domain and the relationships between them.",
-        "example": "The ontology of the library's catalog organizes books into clear categories and subcategories.",
-        "category": [
-            "Information Architecture"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "zero trust": {
-        "word": "zero trust",
-        "definition": "A cybersecurity model that assumes no user or device can be trusted by default, even within a network.",
-        "example": "Zero trust architecture reduces the risk of unauthorized access to sensitive systems.",
-        "category": [
-            "Information Assurance and Cybersecurity"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "penetration testing": {
-        "word": "penetration testing",
-        "definition": "A security assessment technique where authorized simulated attacks are used to identify vulnerabilities.",
-        "example": "Penetration testing revealed several weaknesses in the network's firewall.",
-        "category": [
-            "Information Assurance and Cybersecurity"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "threat modeling": {
-        "word": "threat modeling",
-        "definition": "The process of identifying and prioritizing potential security threats to a system.",
-        "example": "Threat modeling helped the organization develop a comprehensive defense strategy.",
-        "category": [
-            "Information Assurance and Cybersecurity"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "data stewardship": {
-        "word": "data stewardship",
-        "definition": "The responsibility of managing and overseeing an organization's data to ensure its quality and integrity.",
-        "example": "Data stewardship programs ensure data consistency across multiple departments.",
-        "category": [
-            "Information Management"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "data lineage": {
-        "word": "data lineage",
-        "definition": "The process of tracking and documenting the flow of data from its origin to its destination.",
-        "example": "Data lineage tools help organizations understand how data moves through their systems.",
-        "category": [
-            "Information Management"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "master data management": {
-        "word": "master data management",
-        "definition": "A method used to define and manage an organization's critical data to provide a single point of reference.",
-        "example": "Master data management ensures consistency across all business systems.",
-        "category": [
-            "Information Management"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "digital divide": {
-        "word": "digital divide",
-        "definition": "The gap between individuals or communities that have access to digital technologies and those that do not.",
-        "example": "Efforts to close the digital divide focus on providing internet access to underserved areas.",
-        "category": [
-            "Information & Society"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "net neutrality": {
-        "word": "net neutrality",
-        "definition": "The principle that internet service providers must treat all data on the internet equally without discrimination.",
-        "example": "Net neutrality laws prevent ISPs from throttling specific types of content.",
-        "category": [
-            "Information & Society"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "information ethics": {
-        "word": "information ethics",
-        "definition": "The study of moral issues related to information creation, dissemination, and use.",
-        "example": "Information ethics ensures fair and equitable access to digital content for all users.",
-        "category": [
-            "Information & Society"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "refactoring": {
-        "word": "refactoring",
-        "definition": "The process of restructuring existing code to improve its readability and maintainability without changing its functionality.",
-        "example": "Refactoring the legacy code reduced bugs and made it easier to understand.",
-        "category": [
-            "Software Development"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "continuous integration": {
-        "word": "continuous integration",
-        "definition": "A software development practice where code changes are automatically built, tested, and merged into a shared repository.",
-        "example": "Continuous integration helps teams detect errors early in the development cycle.",
-        "category": [
-            "Software Development"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "agile methodology": {
-        "word": "agile methodology",
-        "definition": "An iterative approach to software development that focuses on collaboration, flexibility, and delivering small, incremental changes.",
-        "example": "Using agile methodology, the team delivered new features every two weeks.",
-        "category": [
-            "Software Development"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "version control": {
-        "word": "version control",
-        "definition": "A system that tracks changes to code or documents over time, allowing multiple developers to work on the same project without overwriting each other's work.",
-        "example": "Using version control, developers can easily track changes and revert to earlier versions if necessary.",
-        "category": [
-            "Software Development"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "test-driven development": {
-        "word": "test-driven development",
-        "definition": "A software development approach where tests are written before the code itself, ensuring the code meets the defined requirements.",
-        "example": "Test-driven development helps ensure that the application functions as expected and is free of bugs.",
-        "category": [
-            "Software Development"
-        ],
-        "partOfSpeech": "noun"
-    },
-    "debugging": {
-        "word": "debugging",
-        "definition": "The process of identifying and fixing bugs or issues in software code.",
-        "example": "The developer spent hours debugging the program to eliminate errors.",
-        "category": [
-            "Software Development"
-        ],
-        "partOfSpeech": "noun"
-    },
-
-    "quizScores":{
-        
+    "wordBank": {
+        "algorithm": {
+            "word": "algorithm",
+            "definition": "A process or set of rules to be followed in calculations or problem-solving operations.",
+            "example": "The algorithm analyzes patterns in the data to make predictions.",
+            "category": [
+                "Data Science"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "big data": {
+            "word": "big data",
+            "definition": "Large and complex data sets that are difficult to process with traditional data-processing software.",
+            "example": "Big data analytics helps organizations make data-driven decisions in real-time.",
+            "category": [
+                "Data Science"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "machine learning": {
+            "word": "machine learning",
+            "definition": "A type of artificial intelligence that allows computers to learn from data without being explicitly programmed.",
+            "example": "Machine learning algorithms can automatically improve their performance as they are exposed to more data.",
+            "category": [
+                "Data Science"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "data cleaning": {
+            "word": "data cleaning",
+            "definition": "The process of identifying and correcting errors or inconsistencies in data to improve its quality.",
+            "example": "Data cleaning is crucial to ensure that the insights drawn from data are accurate.",
+            "category": [
+                "Data Science"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "predictive modeling": {
+            "word": "predictive modeling",
+            "definition": "A statistical technique used to predict future outcomes based on historical data.",
+            "example": "Predictive modeling is used to forecast sales based on past purchasing behavior.",
+            "category": [
+                "Data Science"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "data visualization": {
+            "word": "data visualization",
+            "definition": "The graphical representation of data to help understand patterns, trends, and insights.",
+            "example": "Data visualization tools like Tableau allow analysts to present complex data in a more digestible format.",
+            "category": [
+                "Data Science"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "wellness": {
+            "word": "wellness",
+            "definition": "The state of being in good health, especially as an actively pursued goal.",
+            "example": "Regular exercise and a balanced diet are key components of wellness.",
+            "category": [
+                "Health & Well-Being"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "mental health": {
+            "word": "mental health",
+            "definition": "A person's emotional, psychological, and social well-being, affecting how they think, feel, and act.",
+            "example": "Taking care of mental health is just as important as taking care of physical health.",
+            "category": [
+                "Health & Well-Being"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "nutrition": {
+            "word": "nutrition",
+            "definition": "The process of providing or obtaining the food necessary for health and growth.",
+            "example": "A balanced diet with proper nutrition is essential for maintaining energy levels throughout the day.",
+            "category": [
+                "Health & Well-Being"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "exercise": {
+            "word": "exercise",
+            "definition": "Physical activity that is planned and structured to improve fitness and health.",
+            "example": "Regular exercise can help reduce stress and increase overall physical fitness.",
+            "category": [
+                "Health & Well-Being"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "sleep hygiene": {
+            "word": "sleep hygiene",
+            "definition": "Healthy habits and practices that promote quality sleep.",
+            "example": "Maintaining good sleep hygiene, such as keeping a regular sleep schedule, can improve sleep quality.",
+            "category": [
+                "Health & Well-Being"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "stress management": {
+            "word": "stress management",
+            "definition": "Techniques and strategies used to cope with and reduce stress.",
+            "example": "Practices like meditation and mindfulness are effective tools for stress management.",
+            "category": [
+                "Health & Well-Being"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "usability": {
+            "word": "usability",
+            "definition": "The ease of use and learnability of a human-computer interface.",
+            "example": "The usability of the app was improved after the interface was redesigned based on user feedback.",
+            "category": [
+                "Human-Computer Interaction"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "user interface": {
+            "word": "user interface",
+            "definition": "The means by which a user interacts with a computer or software system.",
+            "example": "A clean and intuitive user interface can enhance the overall user experience.",
+            "category": [
+                "Human-Computer Interaction"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "interaction design": {
+            "word": "interaction design",
+            "definition": "The design of the interaction between users and products, including the design of the interface and user experience.",
+            "example": "Good interaction design ensures that users can accomplish their tasks efficiently and with ease.",
+            "category": [
+                "Human-Computer Interaction"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "findability": {
+            "word": "findability",
+            "definition": "The ability of users to locate information or resources on a website or system.",
+            "example": "Improving findability ensures that users can quickly locate the information they need in a large repository.",
+            "category": [
+                "Information Architecture"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "content strategy": {
+            "word": "content strategy",
+            "definition": "Planning, development, and management of content in digital or physical formats.",
+            "example": "A robust content strategy ensures that all web pages align with the organization’s goals.",
+            "category": [
+                "Information Architecture"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "ontology": {
+            "word": "ontology",
+            "definition": "A formal representation of knowledge as a set of concepts within a domain and the relationships between them.",
+            "example": "The ontology of the library's catalog organizes books into clear categories and subcategories.",
+            "category": [
+                "Information Architecture"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "zero trust": {
+            "word": "zero trust",
+            "definition": "A cybersecurity model that assumes no user or device can be trusted by default, even within a network.",
+            "example": "Zero trust architecture reduces the risk of unauthorized access to sensitive systems.",
+            "category": [
+                "Information Assurance and Cybersecurity"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "penetration testing": {
+            "word": "penetration testing",
+            "definition": "A security assessment technique where authorized simulated attacks are used to identify vulnerabilities.",
+            "example": "Penetration testing revealed several weaknesses in the network's firewall.",
+            "category": [
+                "Information Assurance and Cybersecurity"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "threat modeling": {
+            "word": "threat modeling",
+            "definition": "The process of identifying and prioritizing potential security threats to a system.",
+            "example": "Threat modeling helped the organization develop a comprehensive defense strategy.",
+            "category": [
+                "Information Assurance and Cybersecurity"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "data stewardship": {
+            "word": "data stewardship",
+            "definition": "The responsibility of managing and overseeing an organization's data to ensure its quality and integrity.",
+            "example": "Data stewardship programs ensure data consistency across multiple departments.",
+            "category": [
+                "Information Management"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "data lineage": {
+            "word": "data lineage",
+            "definition": "The process of tracking and documenting the flow of data from its origin to its destination.",
+            "example": "Data lineage tools help organizations understand how data moves through their systems.",
+            "category": [
+                "Information Management"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "master data management": {
+            "word": "master data management",
+            "definition": "A method used to define and manage an organization's critical data to provide a single point of reference.",
+            "example": "Master data management ensures consistency across all business systems.",
+            "category": [
+                "Information Management"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "digital divide": {
+            "word": "digital divide",
+            "definition": "The gap between individuals or communities that have access to digital technologies and those that do not.",
+            "example": "Efforts to close the digital divide focus on providing internet access to underserved areas.",
+            "category": [
+                "Information & Society"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "net neutrality": {
+            "word": "net neutrality",
+            "definition": "The principle that internet service providers must treat all data on the internet equally without discrimination.",
+            "example": "Net neutrality laws prevent ISPs from throttling specific types of content.",
+            "category": [
+                "Information & Society"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "information ethics": {
+            "word": "information ethics",
+            "definition": "The study of moral issues related to information creation, dissemination, and use.",
+            "example": "Information ethics ensures fair and equitable access to digital content for all users.",
+            "category": [
+                "Information & Society"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "refactoring": {
+            "word": "refactoring",
+            "definition": "The process of restructuring existing code to improve its readability and maintainability without changing its functionality.",
+            "example": "Refactoring the legacy code reduced bugs and made it easier to understand.",
+            "category": [
+                "Software Development"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "continuous integration": {
+            "word": "continuous integration",
+            "definition": "A software development practice where code changes are automatically built, tested, and merged into a shared repository.",
+            "example": "Continuous integration helps teams detect errors early in the development cycle.",
+            "category": [
+                "Software Development"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "agile methodology": {
+            "word": "agile methodology",
+            "definition": "An iterative approach to software development that focuses on collaboration, flexibility, and delivering small, incremental changes.",
+            "example": "Using agile methodology, the team delivered new features every two weeks.",
+            "category": [
+                "Software Development"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "version control": {
+            "word": "version control",
+            "definition": "A system that tracks changes to code or documents over time, allowing multiple developers to work on the same project without overwriting each other's work.",
+            "example": "Using version control, developers can easily track changes and revert to earlier versions if necessary.",
+            "category": [
+                "Software Development"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "test-driven development": {
+            "word": "test-driven development",
+            "definition": "A software development approach where tests are written before the code itself, ensuring the code meets the defined requirements.",
+            "example": "Test-driven development helps ensure that the application functions as expected and is free of bugs.",
+            "category": [
+                "Software Development"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "debugging": {
+            "word": "debugging",
+            "definition": "The process of identifying and fixing bugs or issues in software code.",
+            "example": "The developer spent hours debugging the program to eliminate errors.",
+            "category": [
+                "Software Development"
+            ],
+            "partOfSpeech": "noun"
+        },
+        "quizScores": {}
     }
 }
