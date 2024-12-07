@@ -1,32 +1,86 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import words from "../word-bank.json";
+import { Link, useParams } from "react-router-dom";
+import { getDatabase, ref, get } from "firebase/database";
 import "../style.css";
 
+function WordsList() {
+  const { category } = useParams();
+  
+  let decodedCategory = category;
+  if (decodedCategory === "data-science") {
+    decodedCategory = "Data Science";
+  } else if (decodedCategory === "human-computer-interaction") {
+    decodedCategory = "Human-Computer Interaction";
+  } else if (decodedCategory === "health-and-well-being") {
+    decodedCategory = "Health & Well-Being";
+  } else if (decodedCategory === "information-and-society") {
+    decodedCategory = "Information & Society";
+  } else if (decodedCategory === "information-architecture") {
+    decodedCategory = "Information Architecture";
+  } else if (decodedCategory === "information-assurance-and-cybersecurity") {
+    decodedCategory = "Information Assurance and Cybersecurity";
+  } else if (decodedCategory === "information-management") {
+    decodedCategory = "Information Management";
+  } else if (decodedCategory === "software-development") {
+    decodedCategory = "Software Development";
+  }
 
-function WordsList( { category } ) {
- 
-  // Filter words based on the category
-  const filteredWords = Object.values(words).filter(wordObj => wordObj.category && wordObj.category.includes(category));
+  const [filteredWords, setFilteredWords] = React.useState([]);
+  const title = React.useState(`${decodedCategory}`);
+  const description = React.useState(`Explore and learn words related to ${decodedCategory}.`);
+
+
+  React.useEffect(() => {
+    const db = getDatabase();
+    const wordsRef = ref(db);
+
+    get(wordsRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const allWords = snapshot.val();
+          const filtered = Object.values(allWords).filter(wordObj =>
+            wordObj.category && wordObj.category.includes(decodedCategory)
+          );
+          setFilteredWords(filtered);
+        } else {
+          console.log("No data available");
+          setFilteredWords([]);
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching words:", error);
+        setFilteredWords([]);
+      });
+  }, [decodedCategory]);
 
   return (
-    <div className="word-list-container">
-      <h2>Words in {category}</h2>
-      <ul className="word-list">
-        {filteredWords.map((wordObj, index) => (
-          <li key={index} className="word-item">
-            <Link
-              to={`/word/${wordObj.word}`}
-              className="word-link"
-            >
-              {wordObj.word}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+    <div>
+      <header className="topic-banner">
+        <h1>{title}</h1>
+        <p>{description}</p>
+      </header>
 
+      <div className="word-list-container">
+        <div className="card-container">
+          {filteredWords.map((wordObj, index) => (
+            <div key={index} className="word-card">
+              <div className="word-card-content">
+                <h2 className="word-title">{wordObj.word}</h2>
+                <Link 
+                  to={`/word/${encodeURIComponent(wordObj.word)}`} 
+                  className="word-link"
+                  state={{ wordObj }}
+                >
+                  GO
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+  );
 }
 
 export default WordsList;

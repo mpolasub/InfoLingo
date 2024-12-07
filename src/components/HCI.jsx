@@ -1,6 +1,5 @@
 import React from "react";
 import TopicPage from "./TopicPage";
-import WordsList from "./WordsList";
 
 
 function HCI() {
@@ -12,7 +11,7 @@ function HCI() {
         title: "Explore New Terms",
         text: "Discover and learn new terminology to expand your knowledge base.",
         buttonText: "GO",
-        link: "/WordsList"
+        link: "/wordslist/human-computer-interaction"
       },
       {
         title: "Test Your Knowledge",
@@ -37,7 +36,6 @@ function HCI() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      {/* <WordsList category="Human-Computer Interaction" /> */}
     </div>
   );
 

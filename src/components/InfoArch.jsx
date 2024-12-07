@@ -1,6 +1,5 @@
 import React from "react";
 import TopicPage from "./TopicPage";
-import WordsList from "./WordsList";
 
 function InfoArch() {
   const title = "Information Architecture";
@@ -11,7 +10,7 @@ function InfoArch() {
       title: "Explore New Terms",
       text: "Discover and learn new terminology to expand your knowledge base.",
       buttonText: "GO",
-      link: "/WordsList"
+      link: "/wordslist/information-architecture"
     },
     {
       title: "Test Your Knowledge",
@@ -36,7 +35,6 @@ function InfoArch() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      {/* <WordsList category="Information Architecture" /> */}
     </div>
   );
 }

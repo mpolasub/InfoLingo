@@ -1,6 +1,5 @@
 import React from "react";
 import TopicPage from "./TopicPage";
-import WordsList from "./WordsList";
 
 function SoftDev() {
   const title = "Software Development";
@@ -11,6 +10,7 @@ function SoftDev() {
       title: "Explore New Terms",
       text: "Discover and learn new terminology to expand your knowledge base.",
       buttonText: "GO",
+      link: "/wordslist/software-development"
     },
     {
       title: "Test Your Knowledge",
@@ -32,7 +32,6 @@ function SoftDev() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      {/* <WordsList category="Software Development" /> */}
     </div>
   );
 }
