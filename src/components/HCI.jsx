@@ -3,7 +3,7 @@ import TopicPage from "./TopicPage";
 
 
 function HCI() {
-  const title = "Human-Center Interaction";
+  const title = "Human-Computer Interaction";
   const description =
     "Learn important ideas to create intuitive technology and elevate user experiences for everyone.";
     const cards = [
