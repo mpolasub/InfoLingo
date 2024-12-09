@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { ref, get, getDatabase } from "firebase/database";
 import words from "../word-bank.json";
 import "../style.css";
 
@@ -9,14 +10,43 @@ function VocabQuiz() {
   const [userInput, setUserInput] = useState("");
   const [score, setScore] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
 
   const totalQuestions = 6;
 
   useEffect(() => {
-   
-    const shuffledQuestions = words.sort(() => 0.5 - Math.random()).slice(0, totalQuestions);
-    setQuestions(shuffledQuestions);
+    const fetchWords = async () => {
+      try {
+        const db = getDatabase();
+        const wordsRef = ref(db);
+        const snapshot = await get(wordsRef);
+        
+        if (snapshot.exists()) {
+          const data = snapshot.val();
+          const wordsArray = Object.entries(data)
+            .filter(([key]) => key !== 'quizScores')
+            .map(([key, value]) => ({
+              id: key,
+              ...value
+            }));
+          
+          const shuffledQuestions = wordsArray
+            .sort(() => 0.5 - Math.random())
+            .slice(0, totalQuestions);
+          
+          setQuestions(shuffledQuestions);
+        } else {
+          console.log("No data available");
+        }
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error fetching words:', error);
+        setIsLoading(false);
+      }
+    };
+
+    fetchWords();
   }, []);
 
   const handleSubmit = (e) => {
