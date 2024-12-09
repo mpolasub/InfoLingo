@@ -1,28 +1,18 @@
 import { ref, push, set } from "firebase/database";
 import { database } from "../main";
-import { getAuth } from "firebase/auth";
+
 
 export function saveScoreToFirebase(score, totalQuestions, userAnswers) {
-  const auth = getAuth(); 
-  const user = auth.currentUser; 
+  const scoresRef = ref(database, "quizScores"); 
+  const newScoreRef = push(scoresRef); 
 
-  if (!user) {
-    console.error("No user is currently signed in.");
-    return;
-  }
-
-  const scoresRef = ref(database, "quizScores/" + user.uid); 
-  const newScoreRef = push(scoresRef);
-
-  const percentage = ((score / totalQuestions) * 100).toFixed(2);
+  const percentage = ((score / totalQuestions) * 100).toFixed(2); 
 
   const data = {
-    uid: user.uid,
-    email: user.email,
     score: score,
     totalQuestions: totalQuestions,
     percentage: percentage,
-    timestamp: Date.now(),
+    timestamp: Date.now(), 
     answers: userAnswers, 
   };
 
