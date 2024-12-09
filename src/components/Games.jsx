@@ -13,7 +13,7 @@ function Games() {
       id: 1,
       title: "Vocabulary Quiz",
       description: "Type the word that matches the definition presented.",
-      route: "/quiz",
+      route: "/VocabQuiz",
     },
     {
       id: 2,
