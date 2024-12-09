@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../style.css";
 
+
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <header>
       <div className="navbar">
-        <div className="logo-container">
-          <img src="./img/InfoLingoLogo.png" alt="InfoLingo Logo" />
+        <div className="logo-container" onClick={() => navigate('/Homepage')}>
+          <img src="./img/InfoLingoLogo.png" alt="InfoLingo Logo"/>
         </div>
         <div className="nav-links">
           <Link to="/Homepage">Home</Link>

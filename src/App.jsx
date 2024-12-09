@@ -39,7 +39,7 @@ function App() {
         <Route path="/word/:currWord" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
         <Route path="/homepage" element={<Homepage />} />
-        <Route path="/WordsList" element={<WordsList />} />
+        <Route path="/wordslist/:category" element={<WordsList />} />
 
         {/* Topics */}
         <Route path="/datascience" element={<DataScience />} />

@@ -1,6 +1,5 @@
 import React from "react";
 import TopicPage from "./TopicPage";
-import WordsList from "./WordsList";
 
 function InfoAssurance() {
   const title = "Information Assurance & Cybersecurity";
@@ -11,7 +10,7 @@ function InfoAssurance() {
         title: "Explore New Terms",
         text: "Discover and learn new terminology to expand your knowledge base.",
         buttonText: "GO",
-        link: "/WordsList"
+        link: "/wordslist/information-assurance-and-cybersecurity"
       },
       {
         title: "Test Your Knowledge",
@@ -36,7 +35,6 @@ function InfoAssurance() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      {/* <WordsList category="Information Assurance and Cybersecurity" /> */}
     </div>
   );
 }

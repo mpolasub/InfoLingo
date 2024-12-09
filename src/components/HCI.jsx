@@ -3,7 +3,7 @@ import TopicPage from "./TopicPage";
 
 
 function HCI() {
-  const title = "Human-Center Interaction";
+  const title = "Human-Computer Interaction";
   const description =
     "Learn important ideas to create intuitive technology and elevate user experiences for everyone.";
     const cards = [
@@ -11,7 +11,7 @@ function HCI() {
         title: "Explore New Terms",
         text: "Discover and learn new terminology to expand your knowledge base.",
         buttonText: "GO",
-        link: "/WordsList"
+        link: "/wordslist/human-computer-interaction"
       },
       {
         title: "Test Your Knowledge",
@@ -36,7 +36,6 @@ function HCI() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      {/* <WordsList category="Human-Computer Interaction" /> */}
     </div>
   );
 
