@@ -13,7 +13,7 @@ function Leaderboard() {
         <h2 className="centered-heading">Leader Board</h2>
         <div className="leaderboard-table">
           <div className="lead-column">
-            <div className="lead-header">Score</div>
+            <div className="lead-header">Rank</div>
             <div className="entry"></div>
             <div className="entry"></div>
             <div className="entry"></div>
@@ -25,7 +25,7 @@ function Leaderboard() {
             <div className="entry"></div>
           </div>
           <div className="lead-column">
-            <div className="lead-header">Rank</div>
+            <div className="lead-header">Score</div>
             <div className="entry"></div>
             <div className="entry"></div>
             <div className="entry"></div>
