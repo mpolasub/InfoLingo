@@ -1,6 +1,5 @@
 import React from "react";
 import TopicPage from "./TopicPage";
-import WordsList from "./WordsList";
 
 function InfoManagement() {
   const title = "Information Management";
@@ -11,7 +10,7 @@ function InfoManagement() {
         title: "Explore New Terms",
         text: "Discover and learn new terminology to expand your knowledge base.",
         buttonText: "GO",
-        link: "/WordsList"
+        link: "/wordslist/information-management"
       },
       {
         title: "Test Your Knowledge",
@@ -36,7 +35,6 @@ function InfoManagement() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      {/* <WordsList category="Information Management" /> */}
     </div>
   );
 }

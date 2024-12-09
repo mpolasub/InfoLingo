@@ -11,7 +11,7 @@ function DataScience() {
         title: "Explore New Terms",
         text: "Discover and learn new terminology to expand your knowledge base.",
         buttonText: "GO",
-        link: "/WordsList"
+        link: "/wordslist/data-science"
       },
       {
         title: "Test Your Knowledge",
@@ -36,7 +36,7 @@ function DataScience() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      {/* <WordsList category="Data Science" /> */}
+      <WordsList category="Data Science" /> {/* just for testing */}
     </div>
   );
 }
