@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { getDatabase, ref, get } from "firebase/database";
 import UniversalButton from "./UniversalButton";
+import { Container, Row, Col } from 'react-bootstrap';
 import "../style.css";
 
 
