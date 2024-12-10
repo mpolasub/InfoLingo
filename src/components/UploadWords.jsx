@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../style.css";
 import UniversalButton from "./UniversalButton";
+import { saveWordToFirebase } from "./uploadWordToDb"
+import { ref, get, getDatabase } from "firebase/database";
+
 
 function UploadWords(props) {
     const categories = [
@@ -87,28 +90,33 @@ function UploadWords(props) {
         }
 
         try {
-            // First get current data
-            const response = await fetch('/word-bank.json');
-            const currentData = await response.json();
+            const db = getDatabase();
+            const wordsRef = ref(db, '/');
             
-            // Add new word to the array
-            const updatedData = [...currentData, formData];
+            const snapshot = await get(wordsRef);
             
-            // Log the data nicely formatted
-            console.group('Word Bank Update (this is just a simulation for now)');
-            console.log('New word added:', {
+            if (snapshot.exists()) {
+                const currentData = snapshot.val();
+                if (currentData[formData.word]) {
+                    alert('This word already exists in the database');
+                    return;
+                }
+            }
+            
+            const wordObj = {
                 word: formData.word,
                 definition: formData.definition,
                 example: formData.example,
                 category: formData.category,
                 partOfSpeech: formData.partOfSpeech
-            });
-            console.log('Total words in bank:', updatedData.length);
-            console.groupEnd();
+            };
+            
+            saveWordToFirebase(wordObj);
+            
             
             // Clear form
             setFormData({ word: "", definition: "", example: "", category: [] });
-            alert('Word logged successfully (check console)');
+            alert('Word logged successfully');
             
         } catch (error) {
             console.error('Error:', error);
