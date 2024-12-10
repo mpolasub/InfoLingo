@@ -112,16 +112,17 @@ button:hover {
 
 .leaderboard-table {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; 
   gap: 20px;
 }
 
 .lead-column {
-  width: 30%;
+  width: 100%;
   padding: 10px;
   background-color: #3a3a3a;
   border-radius: 10px;
 }
+
 
 .lead-header {
   background-color: #6a0dad;
@@ -140,7 +141,6 @@ button:hover {
   height: 40px;
 }
 
-/* Centered Heading */
 .centered-heading {
   text-align: center;
   font-size: 1.8rem;
@@ -919,6 +919,16 @@ ul {
   /* words list  */
   .card-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* leaderboard */
+  .leaderboard-table {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  .lead-column {
+    width: 30%; 
   }
 }
 
