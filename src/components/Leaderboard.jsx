@@ -13,11 +13,9 @@ function Leaderboard() {
 
   function fetchLeaderboard() {
     const dbRef = ref(database);
-    console.log("got db reference");
 
     get(child(dbRef, "quizScores"))
       .then((snapshot) => {
-        console.log("pre-snapshot exists");
         if (snapshot.exists()) {
           const data = snapshot.val();
           const userScoresMap = {};
@@ -61,7 +59,7 @@ function Leaderboard() {
 
           setLeaderboard(scoresArray);
         } else {
-          console.log("No data available in Firebase.");
+          console.error("No data available in Firebase.");
           setLeaderboard([]);
         }
       })
@@ -70,10 +68,6 @@ function Leaderboard() {
       });
   }
 
-  function handleRefresh() {
-    fetchLeaderboard();
-    alert("Leaderboard refreshed!");
-  }
 
   const rankElements = leaderboard.map((entry, index) => (
     <div className="entry" key={index}>
@@ -111,11 +105,6 @@ function Leaderboard() {
             {scoreElements}
           </div>
         </div>
-        {/* <UniversalButton
-          label="Refresh Leaderboard"
-          variant="light"
-          onClick={handleRefresh}
-        /> */}
       </div>
     </div>
   );

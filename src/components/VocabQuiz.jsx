@@ -37,7 +37,7 @@ function VocabQuiz() {
           
           setQuestions(shuffledQuestions);
         } else {
-          console.log("No data available");
+          console.error("No data available");
         }
         setIsLoading(false);
       } catch (error) {
@@ -55,7 +55,6 @@ function VocabQuiz() {
     const correctAnswer = questions[currentQuestionIndex]?.word.toLowerCase();
     const isCorrect = userInput.trim().toLowerCase() === correctAnswer;
 
-    // Update the score if the answer is correct
     if (isCorrect) {
       setScore((prevScore) => prevScore + 1);
     }
@@ -74,7 +73,7 @@ function VocabQuiz() {
 
     if (currentQuestionIndex < totalQuestions - 1) {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setUserInput(""); // Clear the input field
+      setUserInput(""); 
     } else {
       
       navigate("/results", {

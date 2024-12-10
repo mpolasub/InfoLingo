@@ -22,7 +22,7 @@ function ResultsPage() {
     return (
       <div className="results-container">
         <h2 className="results-title">No Results Found</h2>
-        <button className="button-primary" onClick={() => navigate("/quiz")}>
+        <button className="button-primary" onClick={() => navigate("/VocabQuiz")}>
           Start Quiz
         </button>
       </div>
@@ -41,7 +41,7 @@ function ResultsPage() {
           </p>
           {!user && (
             <div className="result-not-saved-banner">
-              ⚠️ Your result was not saved because you are not logged in
+              Your result was not saved because you are not logged in!
             </div>
           )}
         </div>

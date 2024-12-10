@@ -6,7 +6,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Leaderboard from "./components/Leaderboard";
 import VocabQuiz from "./components/VocabQuiz";
-import ResultsPage from "./components/ResultsPage"; // Import ResultsPage component
+import ResultsPage from "./components/ResultsPage"; 
 import Games from "./components/Games";
 import Homepage from "./components/Homepage";
 import Word from "./components/Word";
@@ -21,6 +21,7 @@ import InfoAndSociety from "./components/InfoAndSociety";
 import SoftDev from "./components/SoftDev";
 import WordsList from "./components/WordsList";
 import NotYetPage from './components/NotYetPage';
+import NotFound from './components/NotFound'
 
 
 function App() {
@@ -28,14 +29,13 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        {/* default route */}
         <Route path="/" element={<Homepage />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/VocabQuiz" element={<VocabQuiz />} />
-        <Route path="/results" element={<ResultsPage />} /> {/* Add ResultsPage */}
+        <Route path="/results" element={<ResultsPage />} />
         <Route path="/games" element={<Games />} />
         <Route path="/word/:currWord" element={<Word />} />
         <Route path="/uploadwords" element={<UploadWords />} />
@@ -53,6 +53,7 @@ function App() {
         <Route path="/infoandsociety" element={<InfoAndSociety />} />
         <Route path="/softdev" element={<SoftDev />} />
         
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

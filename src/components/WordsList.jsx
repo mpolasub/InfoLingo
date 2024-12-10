@@ -43,7 +43,7 @@ function WordsList() {
           );
           setFilteredWords(filtered);
         } else {
-          console.log("No data available");
+          console.error("No data available");
           setFilteredWords([]);
         }
       })

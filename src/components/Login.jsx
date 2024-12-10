@@ -11,6 +11,7 @@ function Login() {
   const navigate = useNavigate();
   const auth = getAuth();
 
+  // this function is not used but it is being preserved for potential future use
   function handleGoogleLogin() {
     const provider = new GoogleAuthProvider();
 
@@ -77,7 +78,9 @@ function Login() {
         variant="dark"
         onClick={handleEmailPasswordLogin}
       />
-      {/* <UniversalButton
+      {/* 
+      Same reasoning as comment above
+      <UniversalButton
         label="Log In with Google"
         variant="dark"
         onClick={handleGoogleLogin}

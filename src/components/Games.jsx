@@ -1,4 +1,3 @@
-// vite-project/src/pages/Games.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";

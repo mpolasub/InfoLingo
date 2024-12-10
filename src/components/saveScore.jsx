@@ -27,9 +27,6 @@ export function saveScoreToFirebase(score, totalQuestions, userAnswers) {
   };
 
   set(newScoreRef, data)
-    .then(() => {
-      console.log("Score saved successfully:", data);
-    })
     .catch((error) => {
       console.error("Error saving score to Firebase:", error);
     });
