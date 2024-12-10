@@ -13,30 +13,48 @@ function Leaderboard() {
 
   function fetchLeaderboard() {
     const dbRef = ref(database);
+    console.log("got db reference");
 
     get(child(dbRef, "quizScores"))
       .then((snapshot) => {
+        console.log("pre-snapshot exists");
         if (snapshot.exists()) {
           const data = snapshot.val();
           const userScoresMap = {};
 
-          Object.entries(data).forEach(([uid, userScores]) => {
-            Object.entries(userScores).forEach(([key, scoreEntry]) => {
-              const answers = scoreEntry.answers;
-              const username = scoreEntry.email || "Anonymous";
 
-              if (answers) {
-                if (!userScoresMap[username]) {
-                  userScoresMap[username] = 0;
+          Object.entries(data).forEach(([uid, userScores]) => {
+            Object.entries(userScores).forEach(([attemptId, scoreEntry]) => {
+
+              if (scoreEntry && typeof scoreEntry === 'object') {
+                if (!scoreEntry.email) {
+                  return;
                 }
-                userScoresMap[username] += answers.score || 0;
+                const username = scoreEntry.email || "Anonymous";
+                const score = parseFloat(scoreEntry.percentage) || 0;
+
+
+                if (!userScoresMap[username]) {
+                  userScoresMap[username] = {
+                    totalScore: 0,
+                    attempts: 0,
+                    highestScore: 0
+                  };
+                }
+
+                userScoresMap[username].attempts += 1;
+                userScoresMap[username].totalScore += score;
+                userScoresMap[username].highestScore = Math.max(
+                  userScoresMap[username].highestScore,
+                  score
+                );
               }
             });
           });
 
-          const scoresArray = Object.entries(userScoresMap).map(([username, score]) => ({
+          const scoresArray = Object.entries(userScoresMap).map(([username, stats]) => ({
             username,
-            score,
+            score: stats.highestScore
           }));
 
           scoresArray.sort((a, b) => b.score - a.score);
@@ -93,11 +111,11 @@ function Leaderboard() {
             {scoreElements}
           </div>
         </div>
-        <UniversalButton
+        {/* <UniversalButton
           label="Refresh Leaderboard"
           variant="light"
           onClick={handleRefresh}
-        />
+        /> */}
       </div>
     </div>
   );

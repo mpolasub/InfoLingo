@@ -756,7 +756,16 @@ ul {
   color: black;
 }
 
-
+.result-not-saved-banner {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  padding: 12px 20px;
+  margin: 16px 0;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
