@@ -37,7 +37,7 @@ function UploadWords(props) {
         partOfSpeech: ""
     });
 
-    // Add validation state
+
     const [errors, setErrors] = useState({});
 
     const handleChange = (e) => {
@@ -53,7 +53,7 @@ function UploadWords(props) {
                 [name]: value
             });
         }
-        // Clear error when field is edited
+
         if (errors[name]) {
             setErrors({
                 ...errors,
@@ -112,11 +112,10 @@ function UploadWords(props) {
             };
             
             saveWordToFirebase(wordObj);
+
             
-            
-            // Clear form
             setFormData({ word: "", definition: "", example: "", category: [] });
-            alert('Word logged successfully');
+            alert('Word uploaded successfully');
             
         } catch (error) {
             console.error('Error:', error);
