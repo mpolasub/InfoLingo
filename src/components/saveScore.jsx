@@ -1,8 +1,16 @@
 import { ref, push, set } from "firebase/database";
+import { getAuth } from "firebase/auth"; 
 import { database } from "../main";
 
 
 export function saveScoreToFirebase(score, totalQuestions, userAnswers) {
+  const auth = getAuth();
+  const currentUser = auth.currentUser; 
+
+  if(!currentUser) {
+    console.log("User is not logged in. Score will not save");
+  }
+
   const scoresRef = ref(database, "quizScores"); 
   const newScoreRef = push(scoresRef); 
 

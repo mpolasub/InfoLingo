@@ -608,12 +608,11 @@ ul {
 .save-word {
   margin-top: 1rem;
   margin-right: auto;
-  /* margin-left: 80%; */
-  /* float:right; */
-  padding:auto;
+  padding: 0.5rem;
   width: 6rem;
-  justify-content: center;
+  text-align: center;
 }
+
 
 /* .save-word  */
 
@@ -754,6 +753,22 @@ ul {
 
 .entry {
   color: black;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #000;
+  background: #eaeef9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #6200ea;
+  outline: none;
 }
 
 

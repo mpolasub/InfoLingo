@@ -6,7 +6,7 @@ export function saveWordToFirebase(wordObj) {
 
   set(wordsRef, wordObj)
     .then(() => {
-      console.log("Wprd saved successfully:", wordObj);
+      console.log("Word saved successfully:", wordObj);
     })
     .catch((error) => {
       console.error("Error saving word to Firebase:", error);
