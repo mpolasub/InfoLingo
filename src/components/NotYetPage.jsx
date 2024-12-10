@@ -1,13 +1,18 @@
 import React from 'react';
 import UniversalButton from './UniversalButton';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 
 const NotYetPage = () => {
   return (
     <div className="not-implemented-container">
       <div className="not-implemented-content">
-        <h1 className="not-yet-title">
-          Under Construction
-        </h1>
+        <Container>
+          <h1 className="not-yet-title">
+            Under Construction
+          </h1>
+        </Container>
+
         <p className="not-yet-message">
           This feature is not yet implemented. Please check back later for updates.
         </p>

@@ -810,13 +810,13 @@ ul {
 .not-yet-title {
   font-size: 1.875rem;
   font-weight: 700;
-  color: #111827;
+  color: white;
   margin-bottom: 1rem;
 }
 
 .not-yet-message {
   font-size: 1.125rem;
-  color: #4b5563;
+  color: lightgray;
   margin-bottom: 2rem;
 }
 
