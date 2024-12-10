@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "./style.css";
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 
 import { initializeApp } from "firebase/app";
