@@ -20,6 +20,7 @@ import InfoManagement from "./components/InfoManagement";
 import InfoAndSociety from "./components/InfoAndSociety";
 import SoftDev from "./components/SoftDev";
 import WordsList from "./components/WordsList";
+import NotYetPage from './components/NotYetPage';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/uploadwords" element={<UploadWords />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/wordslist/:category" element={<WordsList />} />
+        <Route path="/NotYetPage" element={<NotYetPage />} />
 
         {/* Topics */}
         <Route path="/datascience" element={<DataScience />} />

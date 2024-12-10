@@ -36,7 +36,6 @@ function DataScience() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
-      <WordsList category="Data Science" /> {/* just for testing */}
     </div>
   );
 }

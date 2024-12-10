@@ -72,6 +72,7 @@ function Signup() {
             placeholder="Enter your email"
             value={username}
             onChange={(event) => setUsername(event.target.value)}
+            className="input-field" 
           />
         </div>
         <div className="form-group">

@@ -19,13 +19,13 @@ function Games() {
       id: 2,
       title: "Crossword Puzzle",
       description: "Test your vocabulary! Type the words that matches the definion presented in the crossword.",
-      route: "/daily-challenge",
+      route: "/NotYetPage",
     },
     {
       id: 3,
       title: "Word of the Day",
       description: "Here is today’s word for you!",
-      route: "/word-of-the-day",
+      route: "/NotYetPage",
     },
   ];
 

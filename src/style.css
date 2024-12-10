@@ -608,12 +608,11 @@ ul {
 .save-word {
   margin-top: 1rem;
   margin-right: auto;
-  /* margin-left: 80%; */
-  /* float:right; */
-  padding:auto;
+  padding: 0.5rem;
   width: 6rem;
-  justify-content: center;
+  text-align: center;
 }
+
 
 /* .save-word  */
 
@@ -756,6 +755,22 @@ ul {
   color: black;
 }
 
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #000;
+  background: #eaeef9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #6200ea;
+  outline: none;
+}
+
 .result-not-saved-banner {
   background-color: #fff3cd;
   border: 1px solid #ffeeba;
@@ -833,3 +848,33 @@ ul {
   color: #fff;
 }
 
+/* not yet page */
+
+.not-implemented-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 1rem;
+}
+
+.not-implemented-content {
+  max-width: 28rem;
+  text-align: center;
+}
+
+
+.not-yet-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.not-yet-message {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}

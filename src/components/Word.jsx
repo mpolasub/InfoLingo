@@ -38,6 +38,10 @@ function Word() {
     if (!wordObj) {
         return null;
     }
+
+    const handleSave = () => {
+        navigate("/NotYetPage");
+    };
     
     return (
         <div className="main-container">
@@ -47,7 +51,7 @@ function Word() {
                     <span className="volume-button"><i className="fa-solid fa-volume-high"></i></span>
                     <div>{wordObj.partOfSpeech}</div> 
                 </div>
-                <UniversalButton label="Save" variant="dark" isFlexible="true" customClass="save-word"></UniversalButton>
+                <UniversalButton label="Save" variant="dark" customClass="save-word" onClick={() => handleSave()}></UniversalButton>
             </div>
             <div className="list-container">
                 <p className="list-heading">Definition:</p>

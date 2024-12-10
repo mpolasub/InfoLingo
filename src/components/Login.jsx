@@ -56,6 +56,7 @@ function Login() {
           placeholder="Enter your email"
           value={username}
           onChange={(event) => setUsername(event.target.value)}
+          className="input-field" 
         />
       </div>
       <div className="form-group">
@@ -67,6 +68,7 @@ function Login() {
           placeholder="Enter your password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
+          className="input-field" 
         />
       </div>
       {error && <p className="error-message">{error}</p>}
@@ -75,11 +77,11 @@ function Login() {
         variant="dark"
         onClick={handleEmailPasswordLogin}
       />
-      <UniversalButton
+      {/* <UniversalButton
         label="Log In with Google"
         variant="dark"
         onClick={handleGoogleLogin}
-      />
+      /> */}
       <p className="signup-prompt">
         Don't have an account? <Link to="/signup">Sign Up</Link>
       </p>

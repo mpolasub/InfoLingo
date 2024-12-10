@@ -1,6 +1,6 @@
 import { ref, push, set } from "firebase/database";
+import { getAuth } from "firebase/auth"; 
 import { database } from "../main";
-import { getAuth } from "firebase/auth";
 
 export function saveScoreToFirebase(score, totalQuestions, userAnswers) {
   const auth = getAuth(); 
