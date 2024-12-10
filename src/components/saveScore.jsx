@@ -22,5 +22,5 @@ export function saveScoreToFirebase(score, totalQuestions, userAnswers) {
     })
     .catch((error) => {
       console.error("Error saving score to Firebase:", error);
-    });
-}
+    })
+    ;
