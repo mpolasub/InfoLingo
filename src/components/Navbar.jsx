@@ -12,6 +12,9 @@ function Navbar() {
         <div className="logo-container" onClick={() => navigate('/Homepage')}>
           <img src="./img/InfoLingoLogo.png" alt="InfoLingo Logo"/>
         </div>
+        <div className="hamburger-menu">
+          <Link to="/NavPage"><span class="fa fa-bars" aria-label="menu"></span></Link>
+        </div>
         <div className="nav-links">
           <Link to="/Homepage">Home</Link>
           <Link to="/login">Login</Link>

@@ -19,25 +19,10 @@ header {
 }
 
 .logo-container img {
-  height: 80px;
+  height: 40px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
 
-.nav-links a {
-  color: white;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #e6e6fa;
-}
 
 
 
@@ -423,29 +408,6 @@ footer {
   transform: translateY(-3px);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .quiz-container {
-    padding: 20px;
-  }
-
-  .quiz-title {
-    font-size: 1.5rem;
-  }
-
-  .instruction h2 {
-    font-size: 1.2rem;
-  }
-
-  .instruction h3 {
-    font-size: 1rem;
-  }
-
-  .button-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
 
 /* manual button class for adjustable sizing */
 
@@ -489,12 +451,15 @@ footer {
   align-items: center; 
   justify-content: center; 
   text-align: center;
+  padding: 0 1rem;
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  max-width: 1200px;
   gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .word-card {
@@ -503,7 +468,7 @@ footer {
   margin-top: 1rem;
   box-shadow: 10px 10px;
   border-radius: 15px; 
-  flex: 1 1 calc(50% - 20px);
+  width: 100%;
 }
 
 .word-card-content {
@@ -549,7 +514,7 @@ footer {
 
 .current-word {
   font-weight: 540;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .volume-button {
@@ -557,6 +522,7 @@ footer {
   top: -0.25rem;
   margin-left: 1rem;
   font-size: 1.5rem;
+  display: none;
 }
 
 .word-container div {
@@ -596,8 +562,6 @@ ul {
 }
 
 .main-container {
-  /* margin-top: 3rem;
-  margin-left: 10%; */
   padding: 2.5rem;
   margin: 3rem 10%;
   background-color: #333;
@@ -614,16 +578,6 @@ ul {
 }
 
 
-/* .save-word  */
-
-
-/* #save-word {
-
-}
-
-#save-word:hover {
-
-} */
 
 /*            upload  page           */
 
@@ -638,7 +592,7 @@ ul {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     width: 100%;
-    font-size: 1.75rem;
+    font-size: 1rem;
     padding: 1rem 1.5rem;
     box-sizing: border-box;
     border: 2px solid #DEDEDE;
@@ -660,10 +614,6 @@ ul {
     padding-right: 3rem;
 }
 
-.text-box select option {
-  color: black;
-  background-color: white;
-}
 
 
 
@@ -685,7 +635,9 @@ ul {
 }
 
 .text-box select option {
-    font-size: 1.75rem;
+    color: black;
+    background-color: white;
+    font-size: 1rem;
     padding: 1rem;
 }
 
@@ -729,17 +681,24 @@ ul {
   color: black;
   margin-top: 1rem;
   box-shadow: 10px 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .topic-banner {
-  padding: 60px;
+  padding: 2rem;
   text-align: center;
   color: black;
-  font-size: 30px;
+  font-size: 1rem;
   background-color: lavender;
-  border-radius: 50px;
-  margin-bottom: 30px;
+  border-radius: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
+
 
 .activity-card {
   border-radius: 15px;
@@ -747,9 +706,6 @@ ul {
   margin-bottom: 20px;
 }
 
-.topic-banner {
-  margin-top: 1rem;
-}
 
 .entry {
   color: black;
@@ -782,21 +738,6 @@ ul {
   font-weight: 500;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  #quiz-main {
-    padding: 20px;
-  }
-
-  .quiz-container {
-    width: 100%;
-  }
-}
 
 /* Games Page Styles */
 .games-section {
@@ -856,7 +797,7 @@ ul {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f9fafb;
+  background-color: #222;
   padding: 1rem;
 }
 
@@ -877,4 +818,141 @@ ul {
   font-size: 1.125rem;
   color: #4b5563;
   margin-bottom: 2rem;
+}
+
+/* mini navbar */
+.nav-links{
+  display: none;
+}
+
+.hamburger-menu span {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* nav page */
+.nav-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #222;
+}
+
+
+.nav-grid {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.nav-grid a {
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.125rem;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (min-width: 900px) {
+
+  /* nav page + bar */
+  .logo-container img {
+    height: 80px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #e6e6fa;
+  }
+
+  .hamburger-menu {
+      display: none;
+  }
+
+  /* word page */
+  .current-word {
+    font-weight: 540;
+    font-size: 3rem;
+  }
+
+  .volume-button {
+    display: none;
+  }
+
+  /* upload word page */
+  .text-box input[type=text],
+  .text-box select {
+      font-size: 1.75rem;
+  }
+
+  .text-box select option {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  /* topic page */
+  .topic-banner {
+    padding: 60px;
+    font-size: 2rem;
+    background-color: lavender;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-top: 1rem;
+  }
+
+  /* words list  */
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #quiz-main {
+    padding: 20px;
+  }
+
+  .quiz-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .quiz-title {
+    font-size: 1.5rem;
+  }
+
+  .instruction h2 {
+    font-size: 1.2rem;
+  }
+
+  .instruction h3 {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
 }

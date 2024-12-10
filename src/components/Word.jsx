@@ -10,19 +10,16 @@ function Word() {
     const location = useLocation();
     const navigate = useNavigate();
     const { currWord } = useParams();
-    console.log("Current word parameter:", currWord); 
 
     const [wordObj, setWordObj] = React.useState(null);
     
     useEffect(() => {
-        console.log("Effect running with word:", currWord); 
         const db = getDatabase();
         
         const wordRef = ref(db, `/${currWord}`);
         
         get(wordRef)
             .then((snapshot) => {
-                console.log("Firebase response:", snapshot.val());
                 if (snapshot.exists()) {
                     setWordObj(snapshot.val());
                 } else {
@@ -48,10 +45,11 @@ function Word() {
             <div className="flex-top">
                 <div className="word-container">
                     <span className="current-word">{wordObj.word}</span>
-                    <span className="volume-button"><i className="fa-solid fa-volume-high"></i></span>
+                    <span className="volume-button"><i className="fa-solid fa-volume-high" aria-label="volume-icon"></i></span>
                     <div>{wordObj.partOfSpeech}</div> 
                 </div>
-                <UniversalButton label="Save" variant="dark" customClass="save-word" onClick={() => handleSave()}></UniversalButton>
+                {/* saved for future use */}
+                {/* <UniversalButton label="Save" variant="dark" customClass="save-word" onClick={() => handleSave()}></UniversalButton> */}
             </div>
             <div className="list-container">
                 <p className="list-heading">Definition:</p>
