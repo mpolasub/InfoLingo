@@ -1,5 +1,6 @@
 import React from "react";
 import TopicPage from "./TopicPage";
+import WordsList from "./WordsList";
 
 function DataScience() {
   const title = "Data Science";
@@ -16,7 +17,7 @@ function DataScience() {
         title: "Test Your Knowledge",
         text: "Challenge yourself with quizzes to assess your understanding.",
         buttonText: "TEST",
-        link: "/quiz"
+        link: "/VocabQuiz"
       },
       {
         title: "Play Against Friends",
@@ -35,6 +36,7 @@ function DataScience() {
   return (
     <div>
       <TopicPage title={title} description={description} cards={cards} />
+      <WordsList category="Data Science" /> {/* just for testing */}
     </div>
   );
 }

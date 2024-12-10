@@ -1,30 +1,46 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import UniversalButton from "./UniversalButton"; // Import the universal button
+import { Link, useNavigate } from "react-router-dom";
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import UniversalButton from "./UniversalButton";
 import "../style.css";
 
-function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${userDetails.username}`) }) {
+function Signup() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
+  const auth = getAuth();
 
-  const handleSignup = () => {
+  function handleSignup() {
     if (!firstname || !lastname || !username || !password) {
       setError("Please fill in all fields.");
       return;
     }
+
     setError("");
-    const userDetails = { firstname, lastname, username, password };
-    onSignup(userDetails);
-  };
+    createUserWithEmailAndPassword(auth, username, password)
+      .then((userCredential) => {
+        return updateProfile(userCredential.user, {
+          displayName: `${firstname} ${lastname}`,
+        });
+      })
+      .then(() => {
+        alert("Signup successful! You can now log in.");
+        navigate("/login");
+      })
+      .catch((err) => {
+        setError(err.message);
+        console.error("Signup error:", err);
+      });
+  }
 
   return (
     <div className="form-container">
       <h1>Welcome</h1>
       <p>Create your Account</p>
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={(event) => event.preventDefault()}>
         <div className="form-group">
           <label htmlFor="firstname">Firstname</label>
           <input
@@ -33,7 +49,7 @@ function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${
             name="firstname"
             placeholder="Enter your first name"
             value={firstname}
-            onChange={(e) => setFirstname(e.target.value)}
+            onChange={(event) => setFirstname(event.target.value)}
           />
         </div>
         <div className="form-group">
@@ -44,18 +60,18 @@ function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${
             name="lastname"
             placeholder="Enter your last name"
             value={lastname}
-            onChange={(e) => setLastname(e.target.value)}
+            onChange={(event) => setLastname(event.target.value)}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username">Email</label>
           <input
-            type="text"
+            type="email"
             id="username"
             name="username"
-            placeholder="Enter a username"
+            placeholder="Enter your email"
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={(event) => setUsername(event.target.value)}
           />
         </div>
         <div className="form-group">
@@ -66,14 +82,14 @@ function Signup({ onSignup = (userDetails) => alert(`Signed up with username: ${
             name="password"
             placeholder="Enter a password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(event) => setPassword(event.target.value)}
           />
         </div>
         {error && <p className="error-message">{error}</p>}
         <UniversalButton
           label="Sign Up"
-          variant="dark" 
-          onClick={handleSignup} 
+          variant="dark"
+          onClick={handleSignup}
         />
       </form>
       <p className="redirect-text">

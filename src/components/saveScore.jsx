@@ -1,6 +1,7 @@
 import { ref, push, set } from "firebase/database";
 import { database } from "../main";
 
+
 export function saveScoreToFirebase(score, totalQuestions, userAnswers) {
   const scoresRef = ref(database, "quizScores"); 
   const newScoreRef = push(scoresRef); 

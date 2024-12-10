@@ -21,6 +21,7 @@ import InfoAndSociety from "./components/InfoAndSociety";
 import SoftDev from "./components/SoftDev";
 import WordsList from "./components/WordsList";
 
+
 function App() {
   return (
     <div>
@@ -32,7 +33,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
-        <Route path="/quiz" element={<VocabQuiz />} />
+        <Route path="/VocabQuiz" element={<VocabQuiz />} />
         <Route path="/results" element={<ResultsPage />} /> {/* Add ResultsPage */}
         <Route path="/games" element={<Games />} />
         <Route path="/word/:currWord" element={<Word />} />
